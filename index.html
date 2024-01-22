@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Key Code Viewer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div>Logo</div>
+      <div>
+        <span>Utilities</span>
+        <span>></span>
+        <span>Keycodes</span>
+      </div>
+      <div>Table</div>
+    </div>
+    <div class="viewer">
+      <h2>Javascript Key Code</h2>
+      <h1>
+        <input
+          type="text"
+          size="40"
+          onkeypress="myFunction(event)"
+          onkeyup="this.value=''"
+        />
+      </h1>
+    </div>
+    <p>Key Code Information</p>
+    <div class="keycodeInfo">
+      <div class="card">
+        <div class="cardTitle">event.which</div>
+        <div id="keyCodeJSText"></div>
+        <div class="=cardDescription">
+          event.which and event.keyCode are deprecated in modern browsers. Use
+          .key or .code instead.
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardTitle">event.key</div>
+        <div id="keyNameText"></div>
+        <div class="=cardDescription">
+          The value of the key pressed. Accounts for modifiers keys that return
+          CAPS and alternate chars.
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardTitle">event.code</div>
+        <div id="keyCodeText"></div>
+        <div class="=cardDescription">
+          The physical key on the keyboard. Doesn't care if you are holding a
+          modifier like Shift.
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardTitle">Unicode</div>
+        <div id="keyUnicodeText"></div>
+        <div class="=cardDescription"></div>
+      </div>
+      <div class="card">
+        <div class="cardTitle">Description</div>
+        <div id="keyDescriptionText"></div>
+        <div class="=cardDescription">
+          This is the description we have created.
+        </div>
+      </div>
+    </div>
+    <footer>Ayylmao</footer>
+  </body>
+</html>
