@@ -8,21 +8,6 @@ const unidentified = [
   "These keys do not have a key code",
 ];
 
-function backspaceKeyPressed() {
-  const backspaceKey = [
-    "8",
-    "Backspace",
-    "Backspace",
-    "⌫",
-    "backspace / delete",
-  ];
-  document.getElementById("keyCodeJSText").innerHTML = backspaceKey[0];
-  document.getElementById("keyNameText").innerHTML = backspaceKey[1];
-  document.getElementById("keyCodeText").innerHTML = backspaceKey[2];
-  document.getElementById("keyUnicodeText").innerHTML = backspaceKey[3];
-  document.getElementById("keyDescriptionText").innerHTML = backspaceKey[4];
-}
-
 function escKeyPressed() {
   const escKey = ["27", "Escape", "Escape", "⎋", "escape"];
   document.getElementById("keyCodeJSText").innerHTML = escKey[0];
@@ -249,7 +234,15 @@ function octothorpeKeyPressed() {
   document.getElementById("keyDescriptionText").innerHTML = octothorpeKey[4];
 }
 
-const fourKey = ["52", "4", "Digit4", "④", "4 Key"];
+function fourKeyPressed() {
+  const fourKey = ["52", "4", "Digit4", "④", "4 Key"];
+  document.getElementById("keyCodeJSText").innerHTML = fourKey[0];
+  document.getElementById("keyNameText").innerHTML = fourKey[1];
+  document.getElementById("keyCodeText").innerHTML = fourKey[2];
+  document.getElementById("keyUnicodeText").innerHTML = fourKey[3];
+  document.getElementById("keyDescriptionText").innerHTML = fourKey[4];
+}
+
 const dollarKey = ["52", "$", "Digit4", "$", "currency"];
 const fiveKey = ["53", "5", "Digit5", "⑤", "5 Key"];
 const percentageKey = ["53", "%", "Digit5", "%", "percent"];
@@ -263,6 +256,24 @@ const nineKey = ["57", "9", "Digit9", "⑨", "9 Key"];
 const paranthesesleftKey = ["57", "(", "Digit9", "(", "parentheses left"];
 const zeroKey = ["48", "0", "Digit0", "⓪", "0"];
 const paranthesesrightKey = ["48", ")", "Digit0", ")", "parantheses right"];
+
+const minusKey = ["189", "-", "Minus", "", "dash"];
+const minuslongKey = ["189", "–", "Minus", "–", "dash"];
+
+function backspaceKeyPressed() {
+  const backspaceKey = [
+    "8",
+    "Backspace",
+    "Backspace",
+    "⌫",
+    "backspace / delete",
+  ];
+  document.getElementById("keyCodeJSText").innerHTML = backspaceKey[0];
+  document.getElementById("keyNameText").innerHTML = backspaceKey[1];
+  document.getElementById("keyCodeText").innerHTML = backspaceKey[2];
+  document.getElementById("keyUnicodeText").innerHTML = backspaceKey[3];
+  document.getElementById("keyDescriptionText").innerHTML = backspaceKey[4];
+}
 
 const cancelKey = ["3", "Cancel", "Pause", "", "break"];
 const tabKey = ["9", "Tab", "Tab", "↹", "tab"];
@@ -286,6 +297,7 @@ const arrowRightKey = ["39", "ArrowRight", "ArrowRight", "→", "right arrow"];
 const arrowDownKey = ["40", "ArrowDown", "ArrowDown", "↓", "down arrow"];
 const selectKey = ["41", "Select", "", "", "select"];
 const executeKey = ["43", "Execute", "", "", "execute"];
+const minussignKey = ["63", "-", "Minus", "", "-"];
 
 const insertKey = ["45", "Insert", "Numpad0", "x", "insert"];
 const helpKey = ["47", "Help", "", "⍰", "help"];
@@ -297,7 +309,6 @@ const cubedKey = ["51", "³", "Digit3", "³", "cube"];
 const poundKey = ["51", "£", "Digit3", "£", "pound"];
 
 const doubledotKey = ["58", ":", "Period", "", ":"];
-const minussignKey = ["63", "-", "Minus", "", "-"];
 const aKey = ["65", "a", "KeyA", "", "a"];
 const bKey = ["66", "b", "KeyB", "", "b"];
 const cKey = ["67", "c", "KeyC", "", "c"];
@@ -404,8 +415,7 @@ const semicolonKey = ["186", ";", "Semicolon", "", "semi-colon / ñ"];
 const equalsignKey = ["187", "=", "Equal", "", "equal sign"];
 const commaKey = ["188", ",", "Comma", "", "comma"];
 const lessthanKey = ["188", "<", "Less than", "", "comma"];
-const minusKey = ["189", "-", "Minus", "", "dash"];
-const minuslongKey = ["189", "–", "Minus", "–", "dash"];
+
 const underscoreKey = ["189", "_", "Minus", "_", "underscore"];
 const periodKey = ["190", ".", "Period", "", "period"];
 const greaterthanKey = ["190", ">", "Period", ">", "greater than"];

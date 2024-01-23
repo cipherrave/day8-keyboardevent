@@ -19,28 +19,13 @@
     </div>
     <div class="viewer">
       <h2>Javascript Key Code</h2>
-      <h1>
-        <input
-          type="text"
-          size="40"
-          onkeypress="myFunction(event)"
-          onkeyup="this.value=''"
-        />
-      </h1>
+      <h1 id="keyCodeJSText"></h1>
     </div>
     <p>Key Code Information</p>
     <div class="keycodeInfo">
       <div class="card">
-        <div class="cardTitle">event.which</div>
-        <div id="keyCodeJSText"></div>
-        <div class="=cardDescription">
-          event.which and event.keyCode are deprecated in modern browsers. Use
-          .key or .code instead.
-        </div>
-      </div>
-      <div class="card">
         <div class="cardTitle">event.key</div>
-        <div id="keyNameText"></div>
+        <h1 id="keyNameText"></h1>
         <div class="=cardDescription">
           The value of the key pressed. Accounts for modifiers keys that return
           CAPS and alternate chars.
@@ -48,7 +33,7 @@
       </div>
       <div class="card">
         <div class="cardTitle">event.code</div>
-        <div id="keyCodeText"></div>
+        <h1 id="keyCodeText"></h1>
         <div class="=cardDescription">
           The physical key on the keyboard. Doesn't care if you are holding a
           modifier like Shift.
@@ -56,12 +41,12 @@
       </div>
       <div class="card">
         <div class="cardTitle">Unicode</div>
-        <div id="keyUnicodeText"></div>
+        <h1 id="keyUnicodeText"></h1>
         <div class="=cardDescription"></div>
       </div>
       <div class="card">
         <div class="cardTitle">Description</div>
-        <div id="keyDescriptionText"></div>
+        <h1 id="keyDescriptionText"></h1>
         <div class="=cardDescription">
           This is the description we have created.
         </div>
