@@ -1,370 +1,2024 @@
 /*["Key Code", "Key", "Code", "Unicode", "Description"]*/
 
-const unidentified = [
-  "",
-  "Unidentified",
-  "Unidentified",
-  "",
-  "These keys do not have a key code",
-];
-
-function escKeyPressed() {
-  const escKey = ["27", "Escape", "Escape", "⎋", "escape"];
-  document.getElementById("keyCodeJSText").innerHTML = escKey[0];
-  document.getElementById("keyNameText").innerHTML = escKey[1];
-  document.getElementById("keyCodeText").innerHTML = escKey[2];
-  document.getElementById("keyUnicodeText").innerHTML = escKey[3];
-  document.getElementById("keyDescriptionText").innerHTML = escKey[4];
-}
-
-function f1KeyPressed() {
-  const f1Key = ["112", "F1", "F1", "", "f1"];
-  document.getElementById("keyCodeJSText").innerHTML = f1Key[0];
-  document.getElementById("keyNameText").innerHTML = f1Key[1];
-  document.getElementById("keyCodeText").innerHTML = f1Key[2];
-  document.getElementById("keyUnicodeText").innerHTML = f1Key[3];
-  document.getElementById("keyDescriptionText").innerHTML = f1Key[4];
-}
-
-function f2KeyPressed() {
-  const f2Key = ["113", "F2", "F2", "", "f2"];
-  document.getElementById("keyCodeJSText").innerHTML = f2Key[0];
-  document.getElementById("keyNameText").innerHTML = f2Key[1];
-  document.getElementById("keyCodeText").innerHTML = f2Key[2];
-  document.getElementById("keyUnicodeText").innerHTML = f2Key[3];
-  document.getElementById("keyDescriptionText").innerHTML = f2Key[4];
-}
-
-function f3KeyPressed() {
-  const f3Key = ["114", "F3", "F3", "", "f3"];
-  document.getElementById("keyCodeJSText").innerHTML = f3Key[0];
-  document.getElementById("keyNameText").innerHTML = f3Key[1];
-  document.getElementById("keyCodeText").innerHTML = f3Key[2];
-  document.getElementById("keyUnicodeText").innerHTML = f3Key[3];
-  document.getElementById("keyDescriptionText").innerHTML = f3Key[4];
-}
-
-function f4KeyPressed() {
-  const f4Key = ["115", "F4", "F4", "", "f4"];
-  document.getElementById("keyCodeJSText").innerHTML = f4Key[0];
-  document.getElementById("keyNameText").innerHTML = f4Key[1];
-  document.getElementById("keyCodeText").innerHTML = f4Key[2];
-  document.getElementById("keyUnicodeText").innerHTML = f4Key[3];
-  document.getElementById("keyDescriptionText").innerHTML = f4Key[4];
-}
-
-function f5KeyPressed() {
-  const f5Key = ["116", "F5", "F5", "", "f5"];
-  document.getElementById("keyCodeJSText").innerHTML = f5Key[0];
-  document.getElementById("keyNameText").innerHTML = f5Key[1];
-  document.getElementById("keyCodeText").innerHTML = f5Key[2];
-  document.getElementById("keyUnicodeText").innerHTML = f5Key[3];
-  document.getElementById("keyDescriptionText").innerHTML = f5Key[4];
-}
-
-function f6KeyPressed() {
-  const f6Key = ["117", "F6", "F6", "", "f6"];
-  document.getElementById("keyCodeJSText").innerHTML = f6Key[0];
-  document.getElementById("keyNameText").innerHTML = f6Key[1];
-  document.getElementById("keyCodeText").innerHTML = f6Key[2];
-  document.getElementById("keyUnicodeText").innerHTML = f6Key[3];
-  document.getElementById("keyDescriptionText").innerHTML = f6Key[4];
-}
-
-function f7KeyPressed() {
-  const f7Key = ["118", "F7", "F7", "", "f7"];
-  document.getElementById("keyCodeJSText").innerHTML = f7Key[0];
-  document.getElementById("keyNameText").innerHTML = f7Key[1];
-  document.getElementById("keyCodeText").innerHTML = f7Key[2];
-  document.getElementById("keyUnicodeText").innerHTML = f7Key[3];
-  document.getElementById("keyDescriptionText").innerHTML = f7Key[4];
-}
-
-function f8KeyPressed() {
-  const f8Key = ["119", "F8", "F8", "", "f8"];
-  document.getElementById("keyCodeJSText").innerHTML = f8Key[0];
-  document.getElementById("keyNameText").innerHTML = f8Key[1];
-  document.getElementById("keyCodeText").innerHTML = f8Key[2];
-  document.getElementById("keyUnicodeText").innerHTML = f8Key[3];
-  document.getElementById("keyDescriptionText").innerHTML = f8Key[4];
-}
-
-function f9KeyPressed() {
-  const f9Key = ["120", "F9", "F9", "", "f9"];
-  document.getElementById("keyCodeJSText").innerHTML = f9Key[0];
-  document.getElementById("keyNameText").innerHTML = f9Key[1];
-  document.getElementById("keyCodeText").innerHTML = f9Key[2];
-  document.getElementById("keyUnicodeText").innerHTML = f9Key[3];
-  document.getElementById("keyDescriptionText").innerHTML = f9Key[4];
-}
-
-function f10KeyPressed() {
-  const f10Key = ["121", "F10", "F10", "", "f10"];
-  document.getElementById("keyCodeJSText").innerHTML = f10Key[0];
-  document.getElementById("keyNameText").innerHTML = f10Key[1];
-  document.getElementById("keyCodeText").innerHTML = f10Key[2];
-  document.getElementById("keyUnicodeText").innerHTML = f10Key[3];
-  document.getElementById("keyDescriptionText").innerHTML = f10Key[4];
-}
-
-function f11KeyPressed() {
-  const f11Key = ["122", "F11", "F11", "", "f11"];
-  document.getElementById("keyCodeJSText").innerHTML = f11Key[0];
-  document.getElementById("keyNameText").innerHTML = f11Key[1];
-  document.getElementById("keyCodeText").innerHTML = f11Key[2];
-  document.getElementById("keyUnicodeText").innerHTML = f11Key[3];
-  document.getElementById("keyDescriptionText").innerHTML = f11Key[4];
-}
-
-function f12KeyPressed() {
-  const f12Key = ["123", "F12", "F12", "", "f12"];
-  document.getElementById("keyCodeJSText").innerHTML = f12Key[0];
-  document.getElementById("keyNameText").innerHTML = f12Key[1];
-  document.getElementById("keyCodeText").innerHTML = f12Key[2];
-  document.getElementById("keyUnicodeText").innerHTML = f12Key[3];
-  document.getElementById("keyDescriptionText").innerHTML = f12Key[4];
-}
-
-function pausebrakeKeyPressed() {
-  const pausebreakKey = ["19", "Pause", "Pause", "", "pause/break"];
-  document.getElementById("keyCodeJSText").innerHTML = pausebreakKey[0];
-  document.getElementById("keyNameText").innerHTML = pausebreakKey[1];
-  document.getElementById("keyCodeText").innerHTML = pausebreakKey[2];
-  document.getElementById("keyUnicodeText").innerHTML = pausebreakKey[3];
-  document.getElementById("keyDescriptionText").innerHTML = pausebreakKey[4];
-}
-
-function printscreenKeyPressed() {
-  const printscreenKey = ["42", "Print", "", "", "print"];
-  document.getElementById("keyCodeJSText").innerHTML = printscreenKey[0];
-  document.getElementById("keyNameText").innerHTML = printscreenKey[1];
-  document.getElementById("keyCodeText").innerHTML = printscreenKey[2];
-  document.getElementById("keyUnicodeText").innerHTML = printscreenKey[3];
-  document.getElementById("keyDescriptionText").innerHTML = printscreenKey[4];
-}
-
-function deleteKeyPressed() {
-  const deleteKey = ["46", "Delete", "NumpadDecimal", "⌦", "delete"];
-  document.getElementById("keyCodeJSText").innerHTML = deleteKey[0];
-  document.getElementById("keyNameText").innerHTML = deleteKey[1];
-  document.getElementById("keyCodeText").innerHTML = deleteKey[2];
-  document.getElementById("keyUnicodeText").innerHTML = deleteKey[3];
-  document.getElementById("keyDescriptionText").innerHTML = deleteKey[4];
-}
-
-function numpaddivideKeyPressed() {
-  const numpaddivideKey = ["111", "/", "NumpadDivide", "÷", "divide"];
-  document.getElementById("keyCodeJSText").innerHTML = numpaddivideKey[0];
-  document.getElementById("keyNameText").innerHTML = numpaddivideKey[1];
-  document.getElementById("keyCodeText").innerHTML = numpaddivideKey[2];
-  document.getElementById("keyUnicodeText").innerHTML = numpaddivideKey[3];
-  document.getElementById("keyDescriptionText").innerHTML = numpaddivideKey[4];
-}
-
-function numpadmultiplyKeyPressed() {
-  const numpadmultiplyKey = ["106", "*", "NumpadMultiply", "×", "multiply"];
-  document.getElementById("keyCodeJSText").innerHTML = numpadmultiplyKey[0];
-  document.getElementById("keyNameText").innerHTML = numpadmultiplyKey[1];
-  document.getElementById("keyCodeText").innerHTML = numpadmultiplyKey[2];
-  document.getElementById("keyUnicodeText").innerHTML = numpadmultiplyKey[3];
-  document.getElementById("keyDescriptionText").innerHTML =
-    numpadmultiplyKey[4];
-}
-
-function backquoteKeyPressed() {
-  const backquoteKey = ["223", "`", "Backquote", "", "`"];
-  document.getElementById("keyCodeJSText").innerHTML = backquoteKey[0];
-  document.getElementById("keyNameText").innerHTML = backquoteKey[1];
-  document.getElementById("keyCodeText").innerHTML = backquoteKey[2];
-  document.getElementById("keyUnicodeText").innerHTML = backquoteKey[3];
-  document.getElementById("keyDescriptionText").innerHTML = backquoteKey[4];
-}
-
-function oneKeyPressed() {
-  const oneKey = ["49", "1", "Digit1", "①", "1 Key"];
-  document.getElementById("keyCodeJSText").innerHTML = oneKey[0];
-  document.getElementById("keyNameText").innerHTML = oneKey[1];
-  document.getElementById("keyCodeText").innerHTML = oneKey[2];
-  document.getElementById("keyUnicodeText").innerHTML = oneKey[3];
-  document.getElementById("keyDescriptionText").innerHTML = oneKey[4];
-}
-
-function exclamationKeyPressed() {
-  const exclamationKey = ["49", "!", "Digit1", "!", "exclamation mark"];
-  document.getElementById("keyCodeJSText").innerHTML = exclamationKey[0];
-  document.getElementById("keyNameText").innerHTML = exclamationKey[1];
-  document.getElementById("keyCodeText").innerHTML = exclamationKey[2];
-  document.getElementById("keyUnicodeText").innerHTML = exclamationKey[3];
-  document.getElementById("keyDescriptionText").innerHTML = exclamationKey[4];
-}
-
-function twoKeyPressed() {
-  const twoKey = ["50", "2", "Digit2", "②", "2 Key"];
-  document.getElementById("keyCodeJSText").innerHTML = twoKey[0];
-  document.getElementById("keyNameText").innerHTML = twoKey[1];
-  document.getElementById("keyCodeText").innerHTML = twoKey[2];
-  document.getElementById("keyUnicodeText").innerHTML = twoKey[3];
-  document.getElementById("keyDescriptionText").innerHTML = twoKey[4];
-}
-
-function atKeyPressed() {
-  const atKey = ["50", "@", "Digit2", "@", "at sign"];
-  document.getElementById("keyCodeJSText").innerHTML = atKey[0];
-  document.getElementById("keyNameText").innerHTML = atKey[1];
-  document.getElementById("keyCodeText").innerHTML = atKey[2];
-  document.getElementById("keyUnicodeText").innerHTML = atKey[3];
-  document.getElementById("keyDescriptionText").innerHTML = atKey[4];
-}
-
-function threeKeyPressed() {
-  const threeKey = ["51", "3", "Digit3", "③", "3 Key"];
-  document.getElementById("keyCodeJSText").innerHTML = threeKey[0];
-  document.getElementById("keyNameText").innerHTML = threeKey[1];
-  document.getElementById("keyCodeText").innerHTML = threeKey[2];
-  document.getElementById("keyUnicodeText").innerHTML = threeKey[3];
-  document.getElementById("keyDescriptionText").innerHTML = threeKey[4];
-}
-
-function octothorpeKeyPressed() {
-  const octothorpeKey = ["51", "#", "Digit3", "#", "hash"];
-  document.getElementById("keyCodeJSText").innerHTML = octothorpeKey[0];
-  document.getElementById("keyNameText").innerHTML = octothorpeKey[1];
-  document.getElementById("keyCodeText").innerHTML = octothorpeKey[2];
-  document.getElementById("keyUnicodeText").innerHTML = octothorpeKey[3];
-  document.getElementById("keyDescriptionText").innerHTML = octothorpeKey[4];
-}
-
-function fourKeyPressed() {
-  const fourKey = ["52", "4", "Digit4", "④", "4 Key"];
-  document.getElementById("keyCodeJSText").innerHTML = fourKey[0];
-  document.getElementById("keyNameText").innerHTML = fourKey[1];
-  document.getElementById("keyCodeText").innerHTML = fourKey[2];
-  document.getElementById("keyUnicodeText").innerHTML = fourKey[3];
-  document.getElementById("keyDescriptionText").innerHTML = fourKey[4];
-}
-
-const dollarKey = ["52", "$", "Digit4", "$", "currency"];
-const fiveKey = ["53", "5", "Digit5", "⑤", "5 Key"];
-const percentageKey = ["53", "%", "Digit5", "%", "percent"];
-const sixKey = ["54", "6", "Digit6", "⑥", "6 Key"];
-const powertoKey = ["54", "^", "Digit6", "^", "power to"];
-const sevenKey = ["55", "7", "Digit7", "⑦", "7 Key"];
-const andKey = ["55", "&", "Digit7", "&", "and"];
-const eightKey = ["56", "8", "Digit8", "⑧", "8 Key"];
-const asterisksKey = ["56", "*", "Digit8", "*", "asterisk"];
-const nineKey = ["57", "9", "Digit9", "⑨", "9 Key"];
-const paranthesesleftKey = ["57", "(", "Digit9", "(", "parentheses left"];
-const zeroKey = ["48", "0", "Digit0", "⓪", "0"];
-const paranthesesrightKey = ["48", ")", "Digit0", ")", "parantheses right"];
-
-const minusKey = ["189", "-", "Minus", "", "dash"];
-const minuslongKey = ["189", "–", "Minus", "–", "dash"];
-
-function backspaceKeyPressed() {
-  const backspaceKey = [
-    "8",
-    "Backspace",
-    "Backspace",
-    "⌫",
-    "backspace / delete",
+function unidentifiedKeyPressed() {
+  const unidentifiedKey = [
+    "",
+    "Unidentified",
+    "Unidentified",
+    "",
+    "These keys do not have a key code",
   ];
-  document.getElementById("keyCodeJSText").innerHTML = backspaceKey[0];
-  document.getElementById("keyNameText").innerHTML = backspaceKey[1];
-  document.getElementById("keyCodeText").innerHTML = backspaceKey[2];
-  document.getElementById("keyUnicodeText").innerHTML = backspaceKey[3];
-  document.getElementById("keyDescriptionText").innerHTML = backspaceKey[4];
+  let x = unidentifiedKey;
+  document.getElementById("keyCodeJSText").innerHTML = x[0];
+  document.getElementById("keyNameText").innerHTML = x[1];
+  document.getElementById("keyCodeText").innerHTML = x[2];
+  document.getElementById("keyUnicodeText").innerHTML = x[3];
+  document.getElementById("keyDescriptionText").innerHTML = x[4];
 }
 
-const cancelKey = ["3", "Cancel", "Pause", "", "break"];
-const tabKey = ["9", "Tab", "Tab", "↹", "tab"];
-const numLockKey = ["12", "Clear", "NumLock", "⌧", "clear"];
-const enterKey = ["13", "Enter", "Enter", "↵", "Enter / Return"];
-const shiftLeftKey = ["16", "Shift", "ShiftLeft", "⇧", "shift"];
-const shiftRightKey = ["16", "Shift", "ShiftRight", "⇧", "shift"];
-const controlLeftKey = ["17", "Control", "ControlLeft", "^", "ctrl"];
-const controlRightKey = ["17", "Control", "ControlRight", "^", "ctrl"];
-const altLeftKey = ["18", "Alt", "AltLeft", "⎇ / ⌥", "Alt / Option"];
-const altRightKey = ["18", "Alt", "AltRight", "⎇ / ⌥", "Alt / Option"];
-const capsLockKey = ["20", "CapsLock", "CapsLock", "⇪", "caps lock"];
-const spacebarKey = ["32", "(blank space)", "Space", "", "spacebar"];
-const pageUpKey = ["33", "PageUp", "Numpad9", "⇞", "page up"];
-const pageDownKey = ["34", "PageDown", "Numpad3", "⇟", "page down"];
-const endKey = ["35", "End", "Numpad1", "", "end"];
-const homeKey = ["36", "Home", "Numpad7", "⌂", "home"];
-const arrowLeftKey = ["37", "ArrowLeft", "ArrowLeft", "←", "left arrow"];
-const arrowUpKey = ["38", "ArrowUp", "ArrowUp", "↑", "up arrow"];
-const arrowRightKey = ["39", "ArrowRight", "ArrowRight", "→", "right arrow"];
-const arrowDownKey = ["40", "ArrowDown", "ArrowDown", "↓", "down arrow"];
-const selectKey = ["41", "Select", "", "", "select"];
-const executeKey = ["43", "Execute", "", "", "execute"];
-const minussignKey = ["63", "-", "Minus", "", "-"];
+window.addEventListener("keydown", function (event) {
+  if (event.key === "Backspace") {
+    console.log("Backspace key is pressed");
+    function backspaceKeyPressed() {
+      const backspaceKey = [
+        "8",
+        "Backspace",
+        "Backspace",
+        "⌫",
+        "backspace / delete",
+      ];
+      let x = backspaceKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    backspaceKeyPressed();
+  }
+  if (event.key === "Escape") {
+    console.log("Escape key is pressed");
+    function escKeyPressed() {
+      const escKey = ["27", "Escape", "Escape", "⎋", "escape"];
+      let x = escKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    escKeyPressed();
+  }
+  if (event.key === "F1") {
+    console.log("F1 key is pressed");
+    function f1KeyPressed() {
+      const f1Key = ["112", "F1", "F1", "", "f1"];
+      let x = f1Key;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    f1KeyPressed();
+  }
+  if (event.key === "NumLock") {
+    console.log("F1 key is pressed");
+    function numlockKeyPressed() {
+      const numlockKey = ["144", "NumLock", "NumLock", "⇭", "num lock"];
+      let x = numlockKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    numLockKeyPressed();
+  }
+  if (event.key === "F2") {
+    console.log("F2 key is pressed");
+    function f2KeyPressed() {
+      const f2Key = ["113", "F2", "F2", "", "f2"];
+      let x = f2Key;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    f2KeyPressed();
+  }
+  if (event.key === "F3") {
+    console.log("F3 key is pressed");
+    function f3KeyPressed() {
+      const f3Key = ["114", "F3", "F3", "", "f3"];
+      let x = f3Key;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    f3KeyPressed();
+  }
+  if (event.key === "F4") {
+    console.log("F4 key is pressed");
+    function f4KeyPressed() {
+      const f4Key = ["115", "F4", "F4", "", "f4"];
+      let x = f4Key;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    f4KeyPressed();
+  }
+  if (event.key === "F5") {
+    console.log("F5 key is pressed");
+    function f5KeyPressed() {
+      const f5Key = ["116", "F5", "F5", "", "f5"];
+      let x = f5Key;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    f5KeyPressed();
+  }
+  if (event.key === "F6") {
+    console.log("F6 key is pressed");
+    function f6KeyPressed() {
+      const f6Key = ["117", "F6", "F6", "", "f6"];
+      let x = f6Key;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    f6KeyPressed();
+  }
+  if (event.key === "F7") {
+    console.log("F7 key is pressed");
+    function f7KeyPressed() {
+      const f7Key = ["118", "F7", "F7", "", "f7"];
+      let x = f7Key;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    f7KeyPressed();
+  }
+  if (event.key === "F8") {
+    console.log("F8q key is pressed");
+    function f8KeyPressed() {
+      const f8Key = ["119", "F8", "F8", "", "f8"];
+      let x = f8Key;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    f8KeyPressed();
+  }
+  if (event.key === "F9") {
+    console.log("F9 key is pressed");
+    function f9KeyPressed() {
+      const f9Key = ["120", "F9", "F9", "", "f9"];
+      let x = f9Key;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    f9KeyPressed();
+  }
+  if (event.key === "F10") {
+    console.log("F2 key is pressed");
+    function f10KeyPressed() {
+      const f10Key = ["121", "F10", "F10", "", "f10"];
+      let x = f10Key;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    f10KeyPressed();
+  }
+  if (event.key === "F11") {
+    console.log("F11 key is pressed");
+    function f11KeyPressed() {
+      const f11Key = ["122", "F11", "F11", "", "f11"];
+      let x = f11Key;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    f11KeyPressed();
+  }
+  if (event.key === "F12") {
+    console.log("F12 key is pressed");
+    function f12KeyPressed() {
+      const f12Key = ["123", "F12", "F12", "", "f12"];
+      let x = f12Key;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    f12KeyPressed();
+  }
+  if (event.key === "Pause") {
+    console.log("Pause key is pressed");
+    function pausebrakeKeyPressed() {
+      const pausebreakKey = ["19", "Pause", "Pause", "", "pause/break"];
+      let x = pausebreakKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    pausebrakeKeyPressed();
+  }
+  if (event.key === "Print") {
+    console.log("Print Screen key is pressed");
+    function printscreenKeyPressed() {
+      const printscreenKey = ["42", "Print", "", "", "print"];
+      let x = printscreenKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    printscreenKeyPressed();
+  }
+  if (event.key === "Delete") {
+    console.log("Delete key is pressed");
+    function deleteKeyPressed() {
+      const deleteKey = ["46", "Delete", "NumpadDecimal", "⌦", "delete"];
+      let x = deleteKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    deleteKeyPressed();
+  }
+  if (event.key === "NumpadDivide") {
+    console.log("Numpad Divide key is pressed");
+    function numpaddivideKeyPressed() {
+      const numpaddivideKey = ["111", "/", "NumpadDivide", "÷", "divide"];
+      let x = numpaddivideKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    numpaddivideKeyPressed();
+  }
+  if (event.key === "NumpadMultiply") {
+    console.log("Numpad Multiply key is pressed");
+    function numpadmultiplyKeyPressed() {
+      const numpadmultiplyKey = ["106", "*", "NumpadMultiply", "×", "multiply"];
+      let x = numpadmultiplyKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    numpadmultiplyKeyPressed();
+  }
+  if (event.key === "Backquote") {
+    console.log("Backquote key is pressed");
+    function backquoteKeyPressed() {
+      const backquoteKey = ["223", "`", "Backquote", "", "`"];
+      let x = backquoteKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    backquoteKeyPressed();
+  }
+  if (event.key === "Digit1") {
+    console.log("One key is pressed");
+    function oneKeyPressed() {
+      const oneKey = ["49", "1", "Digit1", "①", "1 Key"];
+      let x = oneKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    oneKeyPressed();
+  }
+  if (event.key === "Digit1") {
+    console.log("Exclamation key is pressed");
+    function exclamationKeyPressed() {
+      const exclamationKey = ["49", "!", "Digit1", "!", "exclamation mark"];
+      let x = exclamationKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    exclamationKeyPressed();
+  }
+  if (event.key === "Digit2") {
+    console.log("Two key is pressed");
+    function twoKeyPressed() {
+      const twoKey = ["50", "2", "Digit2", "②", "2 Key"];
+      let x = twoKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    twoKeyPressed();
+  }
+  if (event.key === "Digit2") {
+    console.log("@ key is pressed");
+    function atKeyPressed() {
+      const atKey = ["50", "@", "Digit2", "@", "at sign"];
+      let x = atKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    atKeyPressed();
+  }
+  if (event.key === "Digit3") {
+    console.log("Three key is pressed");
+    function threeKeyPressed() {
+      const threeKey = ["51", "3", "Digit3", "③", "3 Key"];
+      let x = threeKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    threeKeyPressed();
+  }
+  if (event.key === "Digit3") {
+    console.log("Octothorpe key is pressed");
+    function octothorpeKeyPressed() {
+      const octothorpeKey = ["51", "#", "Digit3", "#", "hash"];
+      let x = octothorpeKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    octothorpeKeyPressed();
+  }
+  if (event.key === "Digit4") {
+    console.log("FOur key is pressed");
+    function fourKeyPressed() {
+      const fourKey = ["52", "4", "Digit4", "④", "4 Key"];
+      let x = fourKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    fourKeyPressed();
+  }
+  if (event.key === "Digit4") {
+    console.log("Dollar key is pressed");
+    function dollarKeyPressed() {
+      const dollarKey = ["52", "$", "Digit4", "$", "currency"];
+      let x = dollarKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    dollarKeyPressed();
+  }
+  if (event.key === "Digit5") {
+    console.log("Five key is pressed");
+    function fiveKeyPressed() {
+      const fiveKey = ["53", "5", "Digit5", "⑤", "5 Key"];
+      let x = fiveKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    fiveKeyPressed();
+  }
+  if (event.key === "Digit5") {
+    console.log("Percentage Key is pressed");
+    function percentageKeyPressed() {
+      const percentageKey = ["53", "%", "Digit5", "%", "percent"];
+      let x = percentageKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    percentageKeyPressed();
+  }
+  if (event.key === "Digit6") {
+    console.log("Six key is pressed");
+    function sixKeyPressed() {
+      const sixKey = ["54", "6", "Digit6", "⑥", "6 Key"];
+      let x = sixKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    sixKeyPressed();
+  }
+  if (event.key === "Digit6") {
+    console.log("Power to key is pressed");
+    function powertoPressed() {
+      const powertoKey = ["54", "^", "Digit6", "^", "power to"];
+      let x = powertoKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    powertoPressed();
+  }
+  if (event.key === "Digit7") {
+    console.log("Seven 7 is pressed");
+    function sevenKeyPressed() {
+      const sevenKey = ["55", "7", "Digit7", "⑦", "7 Key"];
+      let x = sevenKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    sevenKeyPressed();
+  }
+  if (event.key === "Digit7") {
+    console.log("And key is pressed");
+    function andKeyPressed() {
+      const andKey = ["55", "&", "Digit7", "&", "and"];
+      let x = andKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    andKeyPressed();
+  }
+  if (event.key === "Digit8") {
+    console.log("Eight key is pressed");
+    function eightKeyPressed() {
+      const eightKey = ["56", "8", "Digit8", "⑧", "8 Key"];
+      let x = eightKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    eightKeyPressed();
+  }
+  if (event.key === "Digit8") {
+    console.log("Asterisks key is pressed");
 
-const insertKey = ["45", "Insert", "Numpad0", "x", "insert"];
-const helpKey = ["47", "Help", "", "⍰", "help"];
+    function asterisksKeyPressed() {
+      const asterisksKey = ["56", "*", "Digit8", "*", "asterisk"];
+      let x = asterisksKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    asterisksKeyPressed();
+  }
+  if (event.key === "Digit9") {
+    console.log("Nine key is pressed");
+    function nineKeyPressed() {
+      const nineKey = ["57", "9", "Digit9", "⑨", "9 Key"];
+      let x = nineKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    nineKeyPressed();
+  }
+  if (event.key === "Digit9") {
+    console.log("Paranthesesleft key is pressed");
+    function paranthesesleftKeyPressed() {
+      const paranthesesleftKey = ["57", "(", "Digit9", "(", "parentheses left"];
+      let x = paranthesesleftKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    paranthesesleftKeyPressed();
+  }
+  if (event.key === "Digit0") {
+    console.log("Zero key is pressed");
+    function zeroKeyPressed() {
+      const zeroKey = ["48", "0", "Digit0", "⓪", "0"];
+      let x = zeroKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    zeroKeyPressed();
+  }
+  if (event.key === "Digit0") {
+    console.log("Parantheses right key is pressed");
+    function paranthesesrightKeyPressed() {
+      const paranthesesrightKey = [
+        "48",
+        ")",
+        "Digit0",
+        ")",
+        "parantheses right",
+      ];
+      let x = paranthesesrightKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    paranthesesrightKeyPressed();
+  }
+  if (event.key === "Minus") {
+    console.log("Minus key is pressed");
+    function minusKeyPressed() {
+      const minusKey = ["189", "-", "Minus", "", "dash"];
+      let x = minusKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    minusKeyPressed();
+  }
+  if (event.key === "Minus") {
+    console.log("Minus Long key is pressed");
+    function minuslongKeyPressed() {
+      const minuslongKey = ["189", "–", "Minus", "–", "dash"];
+      let x = minuslongKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    minuslongKeyPressed();
+  }
+  if (event.key === "Pause") {
+    console.log("Cancel key is pressed");
+    function cancelKeyPressed() {
+      const cancelKey = ["3", "Cancel", "Pause", "", "break"];
+      let x = cancelKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    cancelKeyPressed();
+  }
+  if (event.key === "Tab") {
+    console.log("Tab key is pressed");
+    function tabKeyPressed() {
+      const tabKey = ["9", "Tab", "Tab", "↹", "tab"];
+      let x = tabKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    tabKeyPressed();
+  }
+  if (event.key === "NumLock") {
+    console.log("NumLock key is pressed");
+    function numLockKeyPressed() {
+      const numLockKey = ["12", "Clear", "NumLock", "⌧", "clear"];
+      let x = numLockKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    numlockKeyPressed();
+  }
+  if (event.key === "Enter") {
+    console.log("Enter key is pressed");
+    function enterKeyPressed() {
+      const enterKey = ["13", "Enter", "Enter", "↵", "Enter / Return"];
+      let x = enterKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    enterKeyPressed();
+  }
+  if (event.key === "ShiftLeft") {
+    console.log("Left Shift key is pressed");
+    function shiftLeftsKeyPressed() {
+      const shiftLeftKey = ["16", "Shift", "ShiftLeft", "⇧", "shift"];
+      let x = shiftLeftKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    shiftLeftsKeyPressed();
+  }
+  if (event.key === "ShiftRight") {
+    console.log("Shift Right key pressed");
+    function shiftRightKeyPressed() {
+      const shiftRightKey = ["16", "Shift", "ShiftRight", "⇧", "shift"];
+      let x = shiftRightKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    shiftRightKeyPressed();
+  }
+  if (event.key === "ControlLeft") {
+    console.log("CTRL Left key pressed");
+    function controlLeftKeyPressed() {
+      const controlLeftKey = ["17", "Control", "ControlLeft", "^", "ctrl"];
+      let x = controlLeftKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    controlLeftKeyPressed();
+  }
+  if (event.key === "ControlRight") {
+    console.log("CTRL Right key pressed");
+    function controlRightKeyPressed() {
+      const controlRightKey = ["17", "Control", "ControlRight", "^", "ctrl"];
+      let x = controlRightKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    controlRightKeyPressed();
+  }
+  if (event.key === "AltLeft") {
+    console.log("Alt Left key pressed");
+    function altLeftKeyPressed() {
+      const altLeftKey = ["18", "Alt", "AltLeft", "⎇ / ⌥", "Alt / Option"];
+      let x = altLeftKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    altLeftKeyPressed();
+  }
 
-const squaredKey = ["50", "²", "Digit2", "²", "sqaure"];
-const tmKey = ["50", "™", "Digit2", "™", "trademark"];
+  if (event.key === "AltRight") {
+    console.log("Alt Right key pressed");
+    function altRightKeyPressed() {
+      const altRightKey = ["18", "Alt", "AltRight", "⎇ / ⌥", "Alt / Option"];
+      let x = altRightKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    altRightKeyPressed();
+  }
 
-const cubedKey = ["51", "³", "Digit3", "³", "cube"];
-const poundKey = ["51", "£", "Digit3", "£", "pound"];
+  if (event.key === "CapsLock") {
+    console.log("Caps Lock key pressed");
+    function capsLockKeyPressed() {
+      const capsLockKey = ["20", "CapsLock", "CapsLock", "⇪", "caps lock"];
+      let x = capsLockKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    capsLockKeyPressed();
+  }
 
-const doubledotKey = ["58", ":", "Period", "", ":"];
-const aKey = ["65", "a", "KeyA", "", "a"];
-const bKey = ["66", "b", "KeyB", "", "b"];
-const cKey = ["67", "c", "KeyC", "", "c"];
-const dKey = ["68", "d", "KeyD", "", "d"];
-const eKey = ["69", "e", "KeyE", "", "e"];
-const fKey = ["70", "f", "KeyF", "", "f"];
-const gKey = ["71", "g", "KeyG", "", "g"];
-const hKey = ["72", "h", "KeyH", "", "h"];
-const iKey = ["73", "i", "KeyI", "", "i"];
-const jKey = ["74", "j", "KeyJ", "", "j"];
-const kKey = ["75", "k", "KeyK", "", "k"];
-const lKey = ["76", "l", "KeyL", "", "l"];
-const mKey = ["77", "m", "KeyM", "", "m"];
-const nKey = ["78", "n", "KeyN", "", "n"];
-const oKey = ["80", "p", "KeyP", "", "p"];
-const qKey = ["81", "q", "KeyQ", "", "q"];
-const rKey = ["82", "r", "KeyR", "", "r"];
-const sKey = ["83", "s", "KeyS", "", "s"];
-const tKey = ["84", "t", "KeyT", "", "t"];
-const uKey = ["85", "u", "KeyU", "", "u"];
-const vKey = ["86", "v", "KeyV", "", "v"];
-const wKey = ["87", "w", "KeyW", "", "w"];
-const xKey = ["88", "x", "KeyX", "", "x"];
-const yKey = ["89", "y", "KeyY", "", "y"];
-const zKey = ["90", "z", "KeyZ", "", "z"];
-const metaleftKey = [
-  "91",
-  "Meta",
-  "MetaLeft",
-  "⌘ ⊞",
-  "Windows Key / Left ⌘ / Chromebook Search key",
-];
-const metarightKey = ["92", "Meta", "MetaRight", "⌘ ⊞", "Right Windows"];
-const contextKey = [
-  "93",
-  "ContextMenu",
-  "ContextMenu",
-  "▤",
-  "Windows Menu / Right ⌘",
-];
-const sleepKey = ["95", "Standby", "", "☾", "sleep"];
-const numpad0Key = ["96", "0", "Numpad0", "⓪", "Number Pad 0"];
-const numpad1Key = ["97", "1", "Numpad1", "①", "Number Pad 1"];
-const numpad2Key = ["98", "2", "Numpad2", "②", "Number Pad 2"];
-const numpad3Key = ["99", "3", "Numpad3", "③", "Number Pad 3"];
-const numpad4Key = ["100", "4", "Numpad4", "④", "Number Pad 4"];
-const numpad5Key = ["101", "5", "Numpad5", "⑤", "Number Pad 5"];
-const numpad6Key = ["102", "6", "Numpad6", "⑥", "Number Pad 6"];
-const numpad7Key = ["103", "7", "Numpad7", "⑦", "Number Pad 7"];
-const numpad8Key = ["104", "8", "Numpad8", "⑧", "Number Pad 8"];
-const numpad9Key = ["105", "9", "Numpad9", "⑨", "Number Pad 9"];
-const numpadaddKey = ["107", "+", "NumpadAdd", "", "add"];
-const numpadsubtractKey = ["109", "-", "NumpadSubtract", "", "subtract"];
-const numpaddevimalKey = ["110", ".", "NumpadDecimal", "", "decimal point"];
+  if (event.key === "Space") {
+    console.log("Spacebar key pressed");
+    function spacebarKeyPressed() {
+      const spacebarKey = ["32", "(blank space)", "Space", "", "spacebar"];
+      let x = spacebarKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    spacebarKeyPressed();
+  }
 
-const f13Key = ["124", "F13", "F13", "", "f13"];
+  if (event.key === "Numpad9") {
+    console.log("Page Up key pressed");
+    function pageUpKeyPressed() {
+      const pageUpKey = ["33", "PageUp", "Numpad9", "⇞", "page up"];
+      let x = pageUpKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    pageUpKeyPressed();
+  }
+
+  if (event.key === "Numpad3") {
+    console.log("Page Down key pressed");
+    function pageDownKeyPressed() {
+      const pageDownKey = ["34", "PageDown", "Numpad3", "⇟", "page down"];
+      let x = pageDownKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    pageDownKeyPressed();
+  }
+
+  if (event.key === "Numpad1") {
+    console.log("End key pressed");
+    function endKeyPressed() {
+      const endKey = ["35", "End", "Numpad1", "", "end"];
+      let x = endKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    endKeyPressed();
+  }
+
+  if (event.key === "Numpad7") {
+    console.log("Home key pressed");
+    function homeKeyPressed() {
+      const homeKey = ["36", "Home", "Numpad7", "⌂", "home"];
+      let x = homeKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    homeKeyPressed();
+  }
+
+  if (event.key === "ArrowLeft") {
+    console.log("Arrow Left key pressed");
+    function arrowLeftKeyPressed() {
+      const arrowLeftKey = ["37", "ArrowLeft", "ArrowLeft", "←", "left arrow"];
+      let x = arrowLeftKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    arrowLeftKeyPressed();
+  }
+
+  if (event.key === "ArrowUp") {
+    console.log("Arrow Up key pressed");
+    function arrowUpKeyPressed() {
+      const arrowUpKey = ["38", "ArrowUp", "ArrowUp", "↑", "up arrow"];
+      let x = arrowUpKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    arrowUpKeyPressed();
+  }
+
+  if (event.key === "ArrowRight") {
+    console.log("Arrow Right key pressed");
+    function arrowRightKeyPressed() {
+      const arrowRightKey = [
+        "39",
+        "ArrowRight",
+        "ArrowRight",
+        "→",
+        "right arrow",
+      ];
+      let x = arrowRightKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    arrowRightKeyPressed();
+  }
+
+  if (event.key === "ArrowDown") {
+    console.log("Arrow Down key pressed");
+    function arrowDownKeyPressed() {
+      const arrowDownKey = ["40", "ArrowDown", "ArrowDown", "↓", "down arrow"];
+      let x = arrowDownKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    arrowDownKeyPressed();
+  }
+
+  if (event.key === "Select") {
+    console.log("Select key pressed");
+    function selectKeyPressed() {
+      const selectKey = ["41", "Select", "", "", "select"];
+      let x = selectKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    selectKeyPressed();
+  }
+
+  if (event.key === "Execute") {
+    console.log("Execute key pressed");
+    function executeKeyPressed() {
+      const executeKey = ["43", "Execute", "", "", "execute"];
+      let x = executeKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    executeKeyPressed();
+  }
+
+  if (event.key === "Minus") {
+    console.log("Minus key is pressed");
+    function minussignKeyPressed() {
+      const minussignKey = ["63", "-", "Minus", "", "-"];
+      let x = minussignKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    minussignKeyPressed();
+  }
+
+  if (event.key === "Numpad0") {
+    console.log("Insert key is pressed");
+    function insertKeyPressed() {
+      const insertKey = ["45", "Insert", "Numpad0", "x", "insert"];
+      let x = insertKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    insertKeyPressed();
+  }
+
+  if (event.key === "Help") {
+    console.log("Help key is pressed");
+    function helpKeyPressed() {
+      const helpKey = ["47", "Help", "", "⍰", "help"];
+      let x = helpKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    helpKeyPressed();
+  }
+
+  if (event.key === "Digit2") {
+    console.log("Squared key pressed");
+    function squaredKeyPressed() {
+      const squaredKey = ["50", "²", "Digit2", "²", "sqaure"];
+      let x = squaredKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    squaredKeyPressed();
+  }
+
+  if (event.key === "Digit2") {
+    console.log("Trademark key pressed");
+    function tmKeyPressed() {
+      const tmKey = ["50", "™", "Digit2", "™", "trademark"];
+      let x = tmKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    tmKeyPressed();
+  }
+
+  if (event.key === "Digit3") {
+    console.log("Cubed key is pressed");
+    function cubedKeyPressed() {
+      const cubedKey = ["51", "³", "Digit3", "³", "cube"];
+      let x = cubedKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    cubedKeyPressed();
+  }
+
+  if (event.key === "Digit3") {
+    console.log("Pound key is pressed");
+    function poundKeyPressed() {
+      const poundKey = ["51", "£", "Digit3", "£", "pound"];
+      let x = poundKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    poundKeyPressed();
+  }
+
+  if (event.key === "Period") {
+    console.log("Double Dot key is pressed");
+    function doubledotKeyPressed() {
+      const doubledotKey = ["58", ":", "Period", "", ":"];
+      let x = doubledotKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    doubledotKeyPressed();
+  }
+
+  if (event.key === "KeyA") {
+    console.log("A key pressed");
+    function aKeyPressed() {
+      const aKey = ["65", "a", "KeyA", "", "a"];
+      let x = helpKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    aKeyPressed();
+  }
+
+  if (event.key === "KeyB") {
+    console.log("B key pressed");
+    function bKeyPressed() {
+      const bKey = ["66", "b", "KeyB", "", "b"];
+      let x = bKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    bKeyPressed();
+  }
+
+  if (event.key === "KeyC") {
+    console.log("C key pressed");
+    function cKeyPressed() {
+      const cKey = ["67", "c", "KeyC", "", "c"];
+      let x = cKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    cKeyPressed();
+  }
+
+  if (event.key === "KeyD") {
+    console.log("D key pressed");
+    function dKeyPressed() {
+      const dKey = ["68", "d", "KeyD", "", "d"];
+      let x = dKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    dKeyPressed();
+  }
+
+  if (event.key === "KeyE") {
+    console.log("E key pressed");
+    function eKeyPressed() {
+      const eKey = ["69", "e", "KeyE", "", "e"];
+      let x = eKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    eKeyPressed();
+  }
+
+  if (event.key === "KeyF") {
+    console.log("F key pressed");
+    function fKeyPressed() {
+      const fKey = ["70", "f", "KeyF", "", "f"];
+      let x = fKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    fKeyPressed();
+  }
+
+  if (event.key === "KeyG") {
+    console.log("G key is pressed");
+    function gKeyPressed() {
+      const gKey = ["71", "g", "KeyG", "", "g"];
+      let x = gKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    gKeyPressed();
+  }
+
+  if (event.key === "KeyH") {
+    console.log("H key is pressed");
+    function hKeyPressed() {
+      const hKey = ["72", "h", "KeyH", "", "h"];
+      let x = hKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    hKeyPressed();
+  }
+
+  if (event.key === "KeyI") {
+    console.log("I key is pressed");
+    function iKeyPressed() {
+      const iKey = ["73", "i", "KeyI", "", "i"];
+      let x = iKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    iKeyPressed();
+  }
+
+  if (event.key === "KeyJ") {
+    console.log("J key is pressed");
+    function jKeyPressed() {
+      const jKey = ["74", "j", "KeyJ", "", "j"];
+      let x = jKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    jKeyPressed();
+  }
+
+  if (event.key === "KeyK") {
+    console.log("K key is pressed");
+    function kKeyPressed() {
+      const kKey = ["75", "k", "KeyK", "", "k"];
+      let x = kKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    kKeyPressed();
+  }
+
+  if (event.key === "KeyL") {
+    console.log("L key is pressed");
+    function lKeyPressed() {
+      const lKey = ["76", "l", "KeyL", "", "l"];
+      let x = lKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    lKeyPressed();
+  }
+
+  if (event.key === "KeyM") {
+    console.log("M key is pressed");
+    function mKeyPressed() {
+      const mKey = ["77", "m", "KeyM", "", "m"];
+      let x = mKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    mKeyPressed();
+  }
+
+  if (event.key === "KeyN") {
+    console.log("N key is pressed");
+    function nKeyPressed() {
+      const nKey = ["78", "n", "KeyN", "", "n"];
+      let x = nKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    nKeyPressed();
+  }
+
+  if (event.key === "KeyO") {
+    console.log("O key is pressed");
+    function oKeyPressed() {
+      const oKey = ["79", "0", "KeyO", "", "o"];
+      let x = oKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    oKeyPressed();
+  }
+
+  if (event.key === "KeyP") {
+    console.log("P key is pressed");
+    function pKeyPressed() {
+      const pKey = ["80", "p", "KeyP", "", "p"];
+      let x = pKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    pKeyPressed();
+  }
+
+  if (event.key === "KeyQ") {
+    console.log("Q key is pressed");
+    function qKeyPressed() {
+      const qKey = ["81", "q", "KeyQ", "", "q"];
+      let x = qKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    qKeyPressed();
+  }
+
+  if (event.key === "KeyR") {
+    console.log("R key is pressed");
+    function rKeyPressed() {
+      const rKey = ["82", "r", "KeyR", "", "r"];
+      let x = rKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    rKeyPressed();
+  }
+
+  if (event.key === "KeyS") {
+    console.log("S key is pressed");
+    function sKeyPressed() {
+      const sKey = ["83", "s", "KeyS", "", "s"];
+      let x = sKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    sKeyPressed();
+  }
+
+  if (event.key === "KeyT") {
+    console.log("T key is pressed");
+    function tKeyPressed() {
+      const tKey = ["84", "t", "KeyT", "", "t"];
+      let x = tKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    tKeyPressed();
+  }
+
+  if (event.key === "KeyU") {
+    console.log("U key is pressed");
+    function uKeyPressed() {
+      const uKey = ["85", "u", "KeyU", "", "u"];
+      let x = uKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    uKeyPressed();
+  }
+
+  if (event.key === "KeyV") {
+    console.log("V key is pressed");
+    function vKeyPressed() {
+      const vKey = ["86", "v", "KeyV", "", "v"];
+      let x = vKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    vKeyPressed();
+  }
+
+  if (event.key === "KeyW") {
+    console.log("W key is pressed");
+    function wKeyPressed() {
+      const wKey = ["87", "w", "KeyW", "", "w"];
+      let x = wKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    wKeyPressed();
+  }
+
+  if (event.key === "KeyX") {
+    console.log("X key is pressed");
+    function xKeyPressed() {
+      const xKey = ["88", "x", "KeyX", "", "x"];
+      let x = xKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    xKeyPressed();
+  }
+
+  if (event.key === "KeyY") {
+    console.log("Y key is pressed");
+    function yKeyPressed() {
+      const yKey = ["89", "y", "KeyY", "", "y"];
+      let x = yKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    yKeyPressed();
+  }
+
+  if (event.key === "KeyZ") {
+    console.log("Z key is pressed");
+    function zKeyPressed() {
+      const zKey = ["90", "z", "KeyZ", "", "z"];
+      let x = zKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    zKeyPressed();
+  }
+
+  if (event.key === "MetaLeft") {
+    console.log("Meta Left key is pressed");
+    function metaleftKeyPressed() {
+      const metaleftKey = [
+        "91",
+        "Meta",
+        "MetaLeft",
+        "⌘ ⊞",
+        "Windows Key / Left ⌘ / Chromebook Search key",
+      ];
+      let x = metaleftKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    metaleftKeyPressed();
+  }
+
+  if (event.key === "MetaRight") {
+    console.log("Meta Right key is pressed");
+    function metarightKeyPressed() {
+      const metarightKey = ["92", "Meta", "MetaRight", "⌘ ⊞", "Right Windows"];
+      let x = metarightKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    metarightKeyPressed();
+  }
+
+  if (event.key === "ContextMenu") {
+    console.log("Context Menu is pressed");
+    function contextKeyPressed() {
+      const contextKey = [
+        "93",
+        "ContextMenu",
+        "ContextMenu",
+        "▤",
+        "Windows Menu / Right ⌘",
+      ];
+      let x = contextKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    contextKeyPressed();
+  }
+
+  if (event.key === "Standby") {
+    console.log("Standby key is pressed");
+    function sleepKeyPressed() {
+      const sleepKey = ["95", "Standby", "", "☾", "sleep"];
+      let x = sleepKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    sleepKeyPressed();
+  }
+
+  if (event.key === "Numpad0") {
+    console.log("Numpad 0 key is pressed");
+    function numpad0KeyPressed() {
+      const numpad0Key = ["96", "0", "Numpad0", "⓪", "Number Pad 0"];
+      let x = numpad0Key;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    numpad0KeyPressed();
+  }
+
+  if (event.key === "Numpad1") {
+    console.log("Numpad 1 key is pressed");
+    function numpad1KeyPressed() {
+      const numpad1Key = ["97", "1", "Numpad1", "①", "Number Pad 1"];
+      let x = numpad1Key;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    numpad1KeyPressed();
+  }
+
+  if (event.key === "Numpad2") {
+    console.log("Numpad 2 key is pressed");
+    function numpad2KeyPressed() {
+      const numpad2Key = ["98", "2", "Numpad2", "②", "Number Pad 2"];
+      let x = numpad2Key;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    numpad2KeyPressed();
+  }
+
+  if (event.key === "Numpad3") {
+    console.log("Numpad 3 key is pressed");
+    function numpad3KeyPressed() {
+      const numpad3Key = ["99", "3", "Numpad3", "③", "Number Pad 3"];
+      let x = numpad3Key;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    numpad3KeyPressed;
+  }
+
+  if (event.key === "Numpad4") {
+    console.log("Numpad 4 key is pressed");
+    function numpad4KeyPressed() {
+      const numpad4Key = ["100", "4", "Numpad4", "④", "Number Pad 4"];
+      let x = numpad4Key;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    numpad4KeyPressed();
+  }
+
+  if (event.key === "Numpad5") {
+    console.log("Numpad 5 key is pressed");
+    function numpad5KeyPressed() {
+      const numpad5Key = ["101", "5", "Numpad5", "⑤", "Number Pad 5"];
+      let x = numpad5Key;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    numpad5KeyPressed();
+  }
+
+  if (event.key === "Numpad6") {
+    console.log("Numpad 6 key is pressed");
+    function numpad6KeyPressed() {
+      const numpad6Key = ["102", "6", "Numpad6", "⑥", "Number Pad 6"];
+      let x = numpad6Key;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    numpad6KeyPressed();
+  }
+
+  if (event.key === "Numpad7") {
+    console.log("Numpad 7 key is pressed");
+    function numpad7KeyPressed() {
+      const numpad7Key = ["103", "7", "Numpad7", "⑦", "Number Pad 7"];
+      let x = numpad7Key;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    numpad7KeyPressed();
+  }
+
+  if (event.key === "Numpad8") {
+    console.log("Numpad 8 key is pressed");
+    function numpad8KeyPressed() {
+      const numpad8Key = ["104", "8", "Numpad8", "⑧", "Number Pad 8"];
+      let x = numpad8Key;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    numpad8KeyPressed();
+  }
+
+  if (event.key === "Numpad9") {
+    console.log("Numpad 9 key is pressed");
+    function numpad9KeyPressed() {
+      const numpad9Key = ["105", "9", "Numpad9", "⑨", "Number Pad 9"];
+      let x = numpad9Key;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    numpad9KeyPressed();
+  }
+
+  if (event.key === "NumpadAdd") {
+    console.log("Numpad add key is pressed");
+    function numpadAddKeyPressed() {
+      const numpadAddKey = ["107", "+", "NumpadAdd", "", "add"];
+      let x = numpadAddKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    numpadAddKeyPressed();
+  }
+
+  if (event.key === "NumpadSubtract") {
+    console.log("Numpad subtract key is pressed");
+    function numpadSubtractKeyPressed() {
+      const numpadSubtractKey = ["109", "-", "NumpadSubtract", "", "subtract"];
+      let x = numpadSubtractKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    numpadSubtractKeyPressed();
+  }
+
+  if (event.key === "NumpadDecimal") {
+    console.log("Numpad decimal key is pressed");
+    function numpadDecimalKeyPressed() {
+      const numpadDecimalKey = [
+        "110",
+        ".",
+        "NumpadDecimal",
+        "",
+        "decimal point",
+      ];
+      let x = numpadDecimalKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    numpadDecimalKeyPressed();
+  }
+
+  if (event.key === "ScrollLock") {
+    console.log("sScroll lock is pressed");
+    function scrolllockKeyPressed() {
+      const scrolllockKey = [
+        "145",
+        "ScrollLock",
+        "ScrollLock",
+        "⤓",
+        "scroll lock",
+      ];
+      let x = scrolllockKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    scrolllockKeyPressed();
+  }
+
+  if (event.key === "AudioVolumeDown") {
+    console.log("Audio volume down key is pressed");
+    function volumedownKeyPressed() {
+      const volumedownKey = [
+        "174",
+        "AudioVolumeDown",
+        "",
+        "",
+        "decrease volume level",
+      ];
+      let x = volumedownKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    volumedownKeyPressed();
+  }
+
+  if (event.key === "AudioVolumeUp") {
+    console.log("Audio volume up key is pressed");
+    function volumeupKeyPressed() {
+      const volumeupKey = [
+        "175",
+        "AudioVolumeUp",
+        "",
+        "",
+        "increase volume level",
+      ];
+      let x = volumeupKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    volumeupKeyPressed();
+  }
+
+  if (event.key === "MediaTrackNext") {
+    console.log("Media track next key is pressed");
+    function nextKeyPressed() {
+      const nextKey = ["176", "MediaTrackNext", "MediaTrackNext", "", "next"];
+      let x = nextKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    nextKeyPressed();
+  }
+
+  if (event.key === "MediaTrackPrevious") {
+    console.log("Media track previous key is pressed");
+    function previousKeyPressed() {
+      const previousKey = [
+        "177",
+        "MediaTrackPrevious",
+        "MediaTrackPrevious",
+        "",
+        "previous",
+      ];
+      let x = previousKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    previousKeyPressed();
+  }
+
+  if (event.key === "MediaStop") {
+    console.log("Media Stop key is pressed");
+    function stopKeyPressed() {
+      const stopKey = ["178", "MediaStop", "", "", "stop"];
+      let x = stopKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    stopKeyPressed();
+  }
+
+  if (event.key === "MediaPlayPause") {
+    console.log("Media Pause key is pressed");
+    function pauseKeyPressed() {
+      const pauseKey = ["179", "MediaPlayPause", "", "", "play/pause"];
+      let x = pauseKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    pauseKeyPressed();
+  }
+
+  if (event.key === "VolumeMute") {
+    console.log("Volume Mute key is pressed");
+    function muteKeyPressed() {
+      const muteKey = [
+        "181",
+        "AudioVolumeMute",
+        "VolumeMute",
+        "",
+        "mute/unmute (firefox)",
+      ];
+      let x = muteKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    muteKeyPressed();
+  }
+
+  if (event.key === "NumpadDecimal") {
+    console.log("Numpad decimal key is pressed");
+    function numpadDecimalKeyPressed() {
+      const numpadDecimalKey = [
+        "110",
+        ".",
+        "NumpadDecimal",
+        "",
+        "decimal point",
+      ];
+      let x = numpadDecimalKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    numpadDecimalKeyPressed();
+  }
+
+  if (event.key === "Commma") {
+    console.log("Comma key is pressed");
+    function commaKeyPressed() {
+      const commaKey = ["188", ",", "Comma", "", "comma"];
+      let x = commaKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    commaKeyPressed();
+  }
+
+  if (event.key === "Less than") {
+    console.log("Less than key is pressed");
+    function lessthanKeyPressed() {
+      const lessthanKey = ["188", "<", "Less than", "", "comma"];
+      let x = lessthanKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    lessthanKeyPressed();
+  }
+
+  if (event.key === "Minus") {
+    console.log("Underscore key is pressed");
+    function underscoreKeyPressed() {
+      const underscoreKey = ["189", "_", "Minus", "_", "underscore"];
+      let x = underscoreKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    underscoreKeyPressed();
+  }
+
+  if (event.key === "Period") {
+    console.log("Period key is pressed");
+    function periodKeyPressed() {
+      const periodKey = ["190", ".", "Period", "", "period"];
+      let x = periodKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    periodKeyPressed();
+  }
+
+  if (event.key === "Period") {
+    console.log("greater than key is pressed");
+    function greaterthanKeyPressed() {
+      const greaterthanKey = ["190", ">", "Period", ">", "greater than"];
+      let x = greaterthanKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    greaterthanKeyPressed();
+  }
+
+  if (event.key === "Slash") {
+    console.log("Forward slash key is pressed");
+    function forwardslashKeyPressed() {
+      const forwardslashKey = ["191", "/", "Slash", "", "forward slash / ç"];
+      let x = forwardslashKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    forwardslashKeyPressed();
+  }
+
+  if (event.key === "Slash") {
+    console.log("Question key pressed");
+    function questionmarkKeyPressed() {
+      const questionmarkKey = ["191", "?", "Slash", "?", "question mark"];
+      let x = questionmarkKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    questionmarkKeyPressed();
+  }
+
+  if (event.key === "NumpadComma") {
+    console.log("Numpad Comma key pressed");
+    function numpadcommaKeyPressed() {
+      const numpadcommaKey = [
+        "194",
+        ".",
+        "NumpadComma",
+        "",
+        "numpad period (chrome)",
+      ];
+      let x = numpadcommaKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    numpadcommaKeyPressed();
+  }
+
+  if (event.key === "BracketLeft") {
+    console.log("Open Bracket key pressed");
+    function openbracketKeyPressed() {
+      const openbracketKey = ["219", "[", "BracketLeft", "", "open bracket"];
+      let x = openbracketKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    openbracketKeyPressed();
+  }
+
+  if (event.key === "BracketLeft") {
+    console.log("Braacket Left key pressed");
+    function bracesleftKeyPressed() {
+      const bracesleftKey = ["219", "{", "BracketLeft", "{", "braces left"];
+      let x = bracesleftKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    bracesleftKeyPressed();
+  }
+
+  if (event.key === "BracketLeft") {
+    console.log("Double Quote key pressed");
+    function doublequoteKeyPressed() {
+      const doublequoteKey = [
+        "219",
+        "“",
+        "BracketLeft",
+        "“",
+        "inverted double quotation",
+      ];
+      let x = doublequoteKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    doublequoteKeyPressed();
+  }
+
+  if (event.key === "Backslash") {
+    console.log("Backslash key pressed");
+    function backslashKeyPressed() {
+      const backslashKey = ["220", "", "Backslash", "", "back slash"];
+      let x = backslashKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    backslashKeyPressed();
+  }
+
+  if (event.key === "BracketRight") {
+    console.log("Close Bracket key pressed");
+    function closebracketKeyPressed() {
+      const closebracketKey = [
+        "221",
+        "]",
+        "BracketRight",
+        "",
+        "close bracket / å",
+      ];
+      let x = closebracketKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    closebracketKeyPressed();
+  }
+
+  if (event.key === "BracketRight") {
+    console.log("Braces Right key pressed");
+    function bracesrightKeyPressed() {
+      const bracesrightKey = ["221", "}", "BracketRight", "}", "braces right"];
+      let x = bracesrightKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    bracesrightKeyPressed();
+  }
+
+  if (event.key === "Quote") {
+    console.log("Single Quote key pressed");
+    function singlequoteKeyPressed() {
+      const singlequoteKey = ["222", "'", "Quote", "", "single quote / ø / ä"];
+      let x = singlequoteKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    singlequoteKeyPressed();
+  }
+});
+
+/* const f13Key = ["124", "F13", "F13", "", "f13"];
 const f14Key = ["125", "F14", "F14", "", "f14"];
 const f15Key = ["126", "F15", "F15", "", "f15"];
 const f16Key = ["127", "F16", "F16", "", "f16"];
@@ -383,76 +2037,4 @@ const f28Key = ["139", "F28", "F28", "", "F28"];
 const f29Key = ["140", "F29", "F29", "", "F29"];
 const f30Key = ["141", "F30", "F30", "", "F30"];
 const f31Key = ["142", "F31", "F31", "", "F31"];
-const f32Key = ["143", "F32", "F32", "", "F32"];
-const numlockKey = ["144", "NumLock", "NumLock", "⇭", "num lock"];
-const scrolllockKey = ["145", "ScrollLock", "ScrollLock", "⤓", "scroll lock"];
-const volumedownKey = [
-  "174",
-  "AudioVolumeDown",
-  "",
-  "",
-  "decrease volume level",
-];
-const volumeupKey = ["175", "AudioVolumeUp", "", "", "increase volume level"];
-const nextKey = ["176", "MediaTrackNext", "MediaTrackNext", "", "next"];
-const previousKey = [
-  "177",
-  "MediaTrackPrevious",
-  "MediaTrackPrevious",
-  "",
-  "previous",
-];
-const stopKey = ["178", "MediaStop", "", "", "stop"];
-const pauseKey = ["179", "MediaPlayPause", "", "", "play/pause"];
-const muteKey = [
-  "181",
-  "AudioVolumeMute",
-  "VolumeMute",
-  "",
-  "mute/unmute (firefox)",
-];
-const semicolonKey = ["186", ";", "Semicolon", "", "semi-colon / ñ"];
-const equalsignKey = ["187", "=", "Equal", "", "equal sign"];
-const commaKey = ["188", ",", "Comma", "", "comma"];
-const lessthanKey = ["188", "<", "Less than", "", "comma"];
-
-const underscoreKey = ["189", "_", "Minus", "_", "underscore"];
-const periodKey = ["190", ".", "Period", "", "period"];
-const greaterthanKey = ["190", ">", "Period", ">", "greater than"];
-const forwardslashKey = ["191", "/", "Slash", "", "forward slash / ç"];
-const questionmarkKey = ["191", "?", "Slash", "?", "question mark"];
-const numpadcommaKey = [
-  "194",
-  ".",
-  "NumpadComma",
-  "",
-  "numpad period (chrome)",
-];
-const openbracketKey = ["219", "[", "BracketLeft", "", "open bracket"];
-const bracesleftKey = ["219", "{", "BracketLeft", "{", "braces left"];
-const doublequoteKey = [
-  "219",
-  "“",
-  "BracketLeft",
-  "“",
-  "inverted double quotation",
-];
-const backslashKey = ["220", "", "Backslash", "", "back slash"];
-const closebracketKey = ["221", "]", "BracketRight", "", "close bracket / å"];
-const bracesrightKey = ["221", "}", "BracketRight", "}", "braces right"];
-const singlequoteKey = ["222", "'", "Quote", "", "single quote / ø / ä"];
-
-window.addEventListener("keydown", function (event) {
-  if (event.key === "Backspace") {
-    console.log("Backspace key is pressed");
-    backspaceKeyPressed();
-  }
-  if (event.key === "Escape") {
-    console.log("Escape key is pressed");
-    escKeyPressed();
-  }
-  if (event.key === "F1") {
-    console.log("F1 key is pressed");
-    f1KeyPressed();
-  }
-});
+const f32Key = ["143", "F32", "F32", "", "F32"]; */
