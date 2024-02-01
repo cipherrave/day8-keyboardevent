@@ -17,7 +17,7 @@ function unidentifiedKeyPressed() {
 }
 
 window.addEventListener("keydown", function (event) {
-  if (event.key === "Backspace") {
+  if (event.code === "Backspace") {
     console.log("Backspace key is pressed");
     function backspaceKeyPressed() {
       const backspaceKey = [
@@ -36,7 +36,7 @@ window.addEventListener("keydown", function (event) {
     }
     backspaceKeyPressed();
   }
-  if (event.key === "Escape") {
+  if (event.code === "Escape") {
     console.log("Escape key is pressed");
     function escKeyPressed() {
       const escKey = ["27", "Escape", "Escape", "⎋", "escape"];
@@ -49,7 +49,7 @@ window.addEventListener("keydown", function (event) {
     }
     escKeyPressed();
   }
-  if (event.key === "F1") {
+  if (event.code === "F1") {
     console.log("F1 key is pressed");
     function f1KeyPressed() {
       const f1Key = ["112", "F1", "F1", "", "f1"];
@@ -62,7 +62,7 @@ window.addEventListener("keydown", function (event) {
     }
     f1KeyPressed();
   }
-  if (event.key === "NumLock") {
+  if (event.code === "NumLock") {
     console.log("F1 key is pressed");
     function numlockKeyPressed() {
       const numlockKey = ["144", "NumLock", "NumLock", "⇭", "num lock"];
@@ -75,7 +75,7 @@ window.addEventListener("keydown", function (event) {
     }
     numLockKeyPressed();
   }
-  if (event.key === "F2") {
+  if (event.code === "F2") {
     console.log("F2 key is pressed");
     function f2KeyPressed() {
       const f2Key = ["113", "F2", "F2", "", "f2"];
@@ -88,7 +88,7 @@ window.addEventListener("keydown", function (event) {
     }
     f2KeyPressed();
   }
-  if (event.key === "F3") {
+  if (event.code === "F3") {
     console.log("F3 key is pressed");
     function f3KeyPressed() {
       const f3Key = ["114", "F3", "F3", "", "f3"];
@@ -101,7 +101,7 @@ window.addEventListener("keydown", function (event) {
     }
     f3KeyPressed();
   }
-  if (event.key === "F4") {
+  if (event.code === "F4") {
     console.log("F4 key is pressed");
     function f4KeyPressed() {
       const f4Key = ["115", "F4", "F4", "", "f4"];
@@ -114,7 +114,7 @@ window.addEventListener("keydown", function (event) {
     }
     f4KeyPressed();
   }
-  if (event.key === "F5") {
+  if (event.code === "F5") {
     console.log("F5 key is pressed");
     function f5KeyPressed() {
       const f5Key = ["116", "F5", "F5", "", "f5"];
@@ -127,7 +127,7 @@ window.addEventListener("keydown", function (event) {
     }
     f5KeyPressed();
   }
-  if (event.key === "F6") {
+  if (event.code === "F6") {
     console.log("F6 key is pressed");
     function f6KeyPressed() {
       const f6Key = ["117", "F6", "F6", "", "f6"];
@@ -140,7 +140,7 @@ window.addEventListener("keydown", function (event) {
     }
     f6KeyPressed();
   }
-  if (event.key === "F7") {
+  if (event.code === "F7") {
     console.log("F7 key is pressed");
     function f7KeyPressed() {
       const f7Key = ["118", "F7", "F7", "", "f7"];
@@ -153,7 +153,7 @@ window.addEventListener("keydown", function (event) {
     }
     f7KeyPressed();
   }
-  if (event.key === "F8") {
+  if (event.code === "F8") {
     console.log("F8q key is pressed");
     function f8KeyPressed() {
       const f8Key = ["119", "F8", "F8", "", "f8"];
@@ -166,7 +166,7 @@ window.addEventListener("keydown", function (event) {
     }
     f8KeyPressed();
   }
-  if (event.key === "F9") {
+  if (event.code === "F9") {
     console.log("F9 key is pressed");
     function f9KeyPressed() {
       const f9Key = ["120", "F9", "F9", "", "f9"];
@@ -179,7 +179,7 @@ window.addEventListener("keydown", function (event) {
     }
     f9KeyPressed();
   }
-  if (event.key === "F10") {
+  if (event.code === "F10") {
     console.log("F2 key is pressed");
     function f10KeyPressed() {
       const f10Key = ["121", "F10", "F10", "", "f10"];
@@ -192,7 +192,7 @@ window.addEventListener("keydown", function (event) {
     }
     f10KeyPressed();
   }
-  if (event.key === "F11") {
+  if (event.code === "F11") {
     console.log("F11 key is pressed");
     function f11KeyPressed() {
       const f11Key = ["122", "F11", "F11", "", "f11"];
@@ -205,7 +205,7 @@ window.addEventListener("keydown", function (event) {
     }
     f11KeyPressed();
   }
-  if (event.key === "F12") {
+  if (event.code === "F12") {
     console.log("F12 key is pressed");
     function f12KeyPressed() {
       const f12Key = ["123", "F12", "F12", "", "f12"];
@@ -218,7 +218,7 @@ window.addEventListener("keydown", function (event) {
     }
     f12KeyPressed();
   }
-  if (event.key === "Pause") {
+  if (event.code === "Pause") {
     console.log("Pause key is pressed");
     function pausebrakeKeyPressed() {
       const pausebreakKey = ["19", "Pause", "Pause", "", "pause/break"];
@@ -231,7 +231,7 @@ window.addEventListener("keydown", function (event) {
     }
     pausebrakeKeyPressed();
   }
-  if (event.key === "Print") {
+  if (event.code === "Print") {
     console.log("Print Screen key is pressed");
     function printscreenKeyPressed() {
       const printscreenKey = ["42", "Print", "", "", "print"];
@@ -244,7 +244,7 @@ window.addEventListener("keydown", function (event) {
     }
     printscreenKeyPressed();
   }
-  if (event.key === "Delete") {
+  if (event.code === "Delete") {
     console.log("Delete key is pressed");
     function deleteKeyPressed() {
       const deleteKey = ["46", "Delete", "NumpadDecimal", "⌦", "delete"];
@@ -257,7 +257,7 @@ window.addEventListener("keydown", function (event) {
     }
     deleteKeyPressed();
   }
-  if (event.key === "NumpadDivide") {
+  if (event.code === "NumpadDivide") {
     console.log("Numpad Divide key is pressed");
     function numpaddivideKeyPressed() {
       const numpaddivideKey = ["111", "/", "NumpadDivide", "÷", "divide"];
@@ -270,7 +270,7 @@ window.addEventListener("keydown", function (event) {
     }
     numpaddivideKeyPressed();
   }
-  if (event.key === "NumpadMultiply") {
+  if (event.code === "NumpadMultiply") {
     console.log("Numpad Multiply key is pressed");
     function numpadmultiplyKeyPressed() {
       const numpadmultiplyKey = ["106", "*", "NumpadMultiply", "×", "multiply"];
@@ -283,7 +283,7 @@ window.addEventListener("keydown", function (event) {
     }
     numpadmultiplyKeyPressed();
   }
-  if (event.key === "Backquote") {
+  if (event.code === "Backquote") {
     console.log("Backquote key is pressed");
     function backquoteKeyPressed() {
       const backquoteKey = ["223", "`", "Backquote", "", "`"];
@@ -296,7 +296,7 @@ window.addEventListener("keydown", function (event) {
     }
     backquoteKeyPressed();
   }
-  if (event.key === "Digit1") {
+  if (event.code === "Digit1") {
     console.log("One key is pressed");
     function oneKeyPressed() {
       const oneKey = ["49", "1", "Digit1", "①", "1 Key"];
@@ -309,7 +309,7 @@ window.addEventListener("keydown", function (event) {
     }
     oneKeyPressed();
   }
-  if (event.key === "Digit1") {
+  if (event.code === "Digit1" && event.shiftKey) {
     console.log("Exclamation key is pressed");
     function exclamationKeyPressed() {
       const exclamationKey = ["49", "!", "Digit1", "!", "exclamation mark"];
@@ -322,7 +322,7 @@ window.addEventListener("keydown", function (event) {
     }
     exclamationKeyPressed();
   }
-  if (event.key === "Digit2") {
+  if (event.code === "Digit2") {
     console.log("Two key is pressed");
     function twoKeyPressed() {
       const twoKey = ["50", "2", "Digit2", "②", "2 Key"];
@@ -335,7 +335,7 @@ window.addEventListener("keydown", function (event) {
     }
     twoKeyPressed();
   }
-  if (event.key === "Digit2") {
+  if (event.code === "Digit2" && event.shiftKey) {
     console.log("@ key is pressed");
     function atKeyPressed() {
       const atKey = ["50", "@", "Digit2", "@", "at sign"];
@@ -348,7 +348,7 @@ window.addEventListener("keydown", function (event) {
     }
     atKeyPressed();
   }
-  if (event.key === "Digit3") {
+  if (event.code === "Digit3") {
     console.log("Three key is pressed");
     function threeKeyPressed() {
       const threeKey = ["51", "3", "Digit3", "③", "3 Key"];
@@ -361,7 +361,7 @@ window.addEventListener("keydown", function (event) {
     }
     threeKeyPressed();
   }
-  if (event.key === "Digit3") {
+  if (event.code === "Digit3" && event.shiftKey) {
     console.log("Octothorpe key is pressed");
     function octothorpeKeyPressed() {
       const octothorpeKey = ["51", "#", "Digit3", "#", "hash"];
@@ -374,7 +374,7 @@ window.addEventListener("keydown", function (event) {
     }
     octothorpeKeyPressed();
   }
-  if (event.key === "Digit4") {
+  if (event.code === "Digit4") {
     console.log("FOur key is pressed");
     function fourKeyPressed() {
       const fourKey = ["52", "4", "Digit4", "④", "4 Key"];
@@ -387,7 +387,7 @@ window.addEventListener("keydown", function (event) {
     }
     fourKeyPressed();
   }
-  if (event.key === "Digit4") {
+  if (event.code === "Digit4" && event.shiftKey) {
     console.log("Dollar key is pressed");
     function dollarKeyPressed() {
       const dollarKey = ["52", "$", "Digit4", "$", "currency"];
@@ -400,7 +400,7 @@ window.addEventListener("keydown", function (event) {
     }
     dollarKeyPressed();
   }
-  if (event.key === "Digit5") {
+  if (event.code === "Digit5") {
     console.log("Five key is pressed");
     function fiveKeyPressed() {
       const fiveKey = ["53", "5", "Digit5", "⑤", "5 Key"];
@@ -413,7 +413,7 @@ window.addEventListener("keydown", function (event) {
     }
     fiveKeyPressed();
   }
-  if (event.key === "Digit5") {
+  if (event.code === "Digit5" && event.shiftKey) {
     console.log("Percentage Key is pressed");
     function percentageKeyPressed() {
       const percentageKey = ["53", "%", "Digit5", "%", "percent"];
@@ -426,7 +426,7 @@ window.addEventListener("keydown", function (event) {
     }
     percentageKeyPressed();
   }
-  if (event.key === "Digit6") {
+  if (event.code === "Digit6") {
     console.log("Six key is pressed");
     function sixKeyPressed() {
       const sixKey = ["54", "6", "Digit6", "⑥", "6 Key"];
@@ -439,7 +439,7 @@ window.addEventListener("keydown", function (event) {
     }
     sixKeyPressed();
   }
-  if (event.key === "Digit6") {
+  if (event.code === "Digit6" && event.shiftKey) {
     console.log("Power to key is pressed");
     function powertoPressed() {
       const powertoKey = ["54", "^", "Digit6", "^", "power to"];
@@ -452,7 +452,7 @@ window.addEventListener("keydown", function (event) {
     }
     powertoPressed();
   }
-  if (event.key === "Digit7") {
+  if (event.code === "Digit7") {
     console.log("Seven 7 is pressed");
     function sevenKeyPressed() {
       const sevenKey = ["55", "7", "Digit7", "⑦", "7 Key"];
@@ -465,7 +465,7 @@ window.addEventListener("keydown", function (event) {
     }
     sevenKeyPressed();
   }
-  if (event.key === "Digit7") {
+  if (event.code === "Digit7" && event.shiftKey) {
     console.log("And key is pressed");
     function andKeyPressed() {
       const andKey = ["55", "&", "Digit7", "&", "and"];
@@ -478,7 +478,7 @@ window.addEventListener("keydown", function (event) {
     }
     andKeyPressed();
   }
-  if (event.key === "Digit8") {
+  if (event.code === "Digit8") {
     console.log("Eight key is pressed");
     function eightKeyPressed() {
       const eightKey = ["56", "8", "Digit8", "⑧", "8 Key"];
@@ -491,7 +491,7 @@ window.addEventListener("keydown", function (event) {
     }
     eightKeyPressed();
   }
-  if (event.key === "Digit8") {
+  if (event.code === "Digit8" && event.shiftKey) {
     console.log("Asterisks key is pressed");
 
     function asterisksKeyPressed() {
@@ -505,7 +505,7 @@ window.addEventListener("keydown", function (event) {
     }
     asterisksKeyPressed();
   }
-  if (event.key === "Digit9") {
+  if (event.code === "Digit9") {
     console.log("Nine key is pressed");
     function nineKeyPressed() {
       const nineKey = ["57", "9", "Digit9", "⑨", "9 Key"];
@@ -518,7 +518,7 @@ window.addEventListener("keydown", function (event) {
     }
     nineKeyPressed();
   }
-  if (event.key === "Digit9") {
+  if (event.code === "Digit9" && event.shiftKey) {
     console.log("Paranthesesleft key is pressed");
     function paranthesesleftKeyPressed() {
       const paranthesesleftKey = ["57", "(", "Digit9", "(", "parentheses left"];
@@ -531,7 +531,7 @@ window.addEventListener("keydown", function (event) {
     }
     paranthesesleftKeyPressed();
   }
-  if (event.key === "Digit0") {
+  if (event.code === "Digit0") {
     console.log("Zero key is pressed");
     function zeroKeyPressed() {
       const zeroKey = ["48", "0", "Digit0", "⓪", "0"];
@@ -544,7 +544,7 @@ window.addEventListener("keydown", function (event) {
     }
     zeroKeyPressed();
   }
-  if (event.key === "Digit0") {
+  if (event.code === "Digit0" && event.shiftKey) {
     console.log("Parantheses right key is pressed");
     function paranthesesrightKeyPressed() {
       const paranthesesrightKey = [
@@ -563,7 +563,7 @@ window.addEventListener("keydown", function (event) {
     }
     paranthesesrightKeyPressed();
   }
-  if (event.key === "Minus") {
+  if (event.code === "Minus") {
     console.log("Minus key is pressed");
     function minusKeyPressed() {
       const minusKey = ["189", "-", "Minus", "", "dash"];
@@ -576,10 +576,10 @@ window.addEventListener("keydown", function (event) {
     }
     minusKeyPressed();
   }
-  if (event.key === "Minus") {
+  if (event.code === "Minus" && event.shiftKey) {
     console.log("Minus Long key is pressed");
     function minuslongKeyPressed() {
-      const minuslongKey = ["189", "–", "Minus", "–", "dash"];
+      const minuslongKey = ["189", "-", "Minus", "–", "dash"];
       let x = minuslongKey;
       document.getElementById("keyCodeJSText").innerHTML = x[0];
       document.getElementById("keyNameText").innerHTML = x[1];
@@ -589,7 +589,7 @@ window.addEventListener("keydown", function (event) {
     }
     minuslongKeyPressed();
   }
-  if (event.key === "Pause") {
+  if (event.code === "Pause") {
     console.log("Cancel key is pressed");
     function cancelKeyPressed() {
       const cancelKey = ["3", "Cancel", "Pause", "", "break"];
@@ -602,7 +602,7 @@ window.addEventListener("keydown", function (event) {
     }
     cancelKeyPressed();
   }
-  if (event.key === "Tab") {
+  if (event.code === "Tab") {
     console.log("Tab key is pressed");
     function tabKeyPressed() {
       const tabKey = ["9", "Tab", "Tab", "↹", "tab"];
@@ -615,7 +615,7 @@ window.addEventListener("keydown", function (event) {
     }
     tabKeyPressed();
   }
-  if (event.key === "NumLock") {
+  if (event.code === "NumLock") {
     console.log("NumLock key is pressed");
     function numLockKeyPressed() {
       const numLockKey = ["12", "Clear", "NumLock", "⌧", "clear"];
@@ -628,7 +628,7 @@ window.addEventListener("keydown", function (event) {
     }
     numlockKeyPressed();
   }
-  if (event.key === "Enter") {
+  if (event.code === "Enter") {
     console.log("Enter key is pressed");
     function enterKeyPressed() {
       const enterKey = ["13", "Enter", "Enter", "↵", "Enter / Return"];
@@ -641,7 +641,7 @@ window.addEventListener("keydown", function (event) {
     }
     enterKeyPressed();
   }
-  if (event.key === "ShiftLeft") {
+  if (event.code === "ShiftLeft") {
     console.log("Left Shift key is pressed");
     function shiftLeftsKeyPressed() {
       const shiftLeftKey = ["16", "Shift", "ShiftLeft", "⇧", "shift"];
@@ -654,7 +654,7 @@ window.addEventListener("keydown", function (event) {
     }
     shiftLeftsKeyPressed();
   }
-  if (event.key === "ShiftRight") {
+  if (event.code === "ShiftRight") {
     console.log("Shift Right key pressed");
     function shiftRightKeyPressed() {
       const shiftRightKey = ["16", "Shift", "ShiftRight", "⇧", "shift"];
@@ -667,7 +667,7 @@ window.addEventListener("keydown", function (event) {
     }
     shiftRightKeyPressed();
   }
-  if (event.key === "ControlLeft") {
+  if (event.code === "ControlLeft") {
     console.log("CTRL Left key pressed");
     function controlLeftKeyPressed() {
       const controlLeftKey = ["17", "Control", "ControlLeft", "^", "ctrl"];
@@ -680,7 +680,7 @@ window.addEventListener("keydown", function (event) {
     }
     controlLeftKeyPressed();
   }
-  if (event.key === "ControlRight") {
+  if (event.code === "ControlRight") {
     console.log("CTRL Right key pressed");
     function controlRightKeyPressed() {
       const controlRightKey = ["17", "Control", "ControlRight", "^", "ctrl"];
@@ -693,7 +693,7 @@ window.addEventListener("keydown", function (event) {
     }
     controlRightKeyPressed();
   }
-  if (event.key === "AltLeft") {
+  if (event.code === "AltLeft") {
     console.log("Alt Left key pressed");
     function altLeftKeyPressed() {
       const altLeftKey = ["18", "Alt", "AltLeft", "⎇ / ⌥", "Alt / Option"];
@@ -707,7 +707,7 @@ window.addEventListener("keydown", function (event) {
     altLeftKeyPressed();
   }
 
-  if (event.key === "AltRight") {
+  if (event.code === "AltRight") {
     console.log("Alt Right key pressed");
     function altRightKeyPressed() {
       const altRightKey = ["18", "Alt", "AltRight", "⎇ / ⌥", "Alt / Option"];
@@ -721,7 +721,7 @@ window.addEventListener("keydown", function (event) {
     altRightKeyPressed();
   }
 
-  if (event.key === "CapsLock") {
+  if (event.code === "CapsLock") {
     console.log("Caps Lock key pressed");
     function capsLockKeyPressed() {
       const capsLockKey = ["20", "CapsLock", "CapsLock", "⇪", "caps lock"];
@@ -735,7 +735,7 @@ window.addEventListener("keydown", function (event) {
     capsLockKeyPressed();
   }
 
-  if (event.key === "Space") {
+  if (event.code === "Space") {
     console.log("Spacebar key pressed");
     function spacebarKeyPressed() {
       const spacebarKey = ["32", "(blank space)", "Space", "", "spacebar"];
@@ -749,63 +749,7 @@ window.addEventListener("keydown", function (event) {
     spacebarKeyPressed();
   }
 
-  if (event.key === "Numpad9") {
-    console.log("Page Up key pressed");
-    function pageUpKeyPressed() {
-      const pageUpKey = ["33", "PageUp", "Numpad9", "⇞", "page up"];
-      let x = pageUpKey;
-      document.getElementById("keyCodeJSText").innerHTML = x[0];
-      document.getElementById("keyNameText").innerHTML = x[1];
-      document.getElementById("keyCodeText").innerHTML = x[2];
-      document.getElementById("keyUnicodeText").innerHTML = x[3];
-      document.getElementById("keyDescriptionText").innerHTML = x[4];
-    }
-    pageUpKeyPressed();
-  }
-
-  if (event.key === "Numpad3") {
-    console.log("Page Down key pressed");
-    function pageDownKeyPressed() {
-      const pageDownKey = ["34", "PageDown", "Numpad3", "⇟", "page down"];
-      let x = pageDownKey;
-      document.getElementById("keyCodeJSText").innerHTML = x[0];
-      document.getElementById("keyNameText").innerHTML = x[1];
-      document.getElementById("keyCodeText").innerHTML = x[2];
-      document.getElementById("keyUnicodeText").innerHTML = x[3];
-      document.getElementById("keyDescriptionText").innerHTML = x[4];
-    }
-    pageDownKeyPressed();
-  }
-
-  if (event.key === "Numpad1") {
-    console.log("End key pressed");
-    function endKeyPressed() {
-      const endKey = ["35", "End", "Numpad1", "", "end"];
-      let x = endKey;
-      document.getElementById("keyCodeJSText").innerHTML = x[0];
-      document.getElementById("keyNameText").innerHTML = x[1];
-      document.getElementById("keyCodeText").innerHTML = x[2];
-      document.getElementById("keyUnicodeText").innerHTML = x[3];
-      document.getElementById("keyDescriptionText").innerHTML = x[4];
-    }
-    endKeyPressed();
-  }
-
-  if (event.key === "Numpad7") {
-    console.log("Home key pressed");
-    function homeKeyPressed() {
-      const homeKey = ["36", "Home", "Numpad7", "⌂", "home"];
-      let x = homeKey;
-      document.getElementById("keyCodeJSText").innerHTML = x[0];
-      document.getElementById("keyNameText").innerHTML = x[1];
-      document.getElementById("keyCodeText").innerHTML = x[2];
-      document.getElementById("keyUnicodeText").innerHTML = x[3];
-      document.getElementById("keyDescriptionText").innerHTML = x[4];
-    }
-    homeKeyPressed();
-  }
-
-  if (event.key === "ArrowLeft") {
+  if (event.code === "ArrowLeft") {
     console.log("Arrow Left key pressed");
     function arrowLeftKeyPressed() {
       const arrowLeftKey = ["37", "ArrowLeft", "ArrowLeft", "←", "left arrow"];
@@ -819,7 +763,7 @@ window.addEventListener("keydown", function (event) {
     arrowLeftKeyPressed();
   }
 
-  if (event.key === "ArrowUp") {
+  if (event.code === "ArrowUp") {
     console.log("Arrow Up key pressed");
     function arrowUpKeyPressed() {
       const arrowUpKey = ["38", "ArrowUp", "ArrowUp", "↑", "up arrow"];
@@ -833,7 +777,7 @@ window.addEventListener("keydown", function (event) {
     arrowUpKeyPressed();
   }
 
-  if (event.key === "ArrowRight") {
+  if (event.code === "ArrowRight") {
     console.log("Arrow Right key pressed");
     function arrowRightKeyPressed() {
       const arrowRightKey = [
@@ -853,7 +797,7 @@ window.addEventListener("keydown", function (event) {
     arrowRightKeyPressed();
   }
 
-  if (event.key === "ArrowDown") {
+  if (event.code === "ArrowDown") {
     console.log("Arrow Down key pressed");
     function arrowDownKeyPressed() {
       const arrowDownKey = ["40", "ArrowDown", "ArrowDown", "↓", "down arrow"];
@@ -867,7 +811,7 @@ window.addEventListener("keydown", function (event) {
     arrowDownKeyPressed();
   }
 
-  if (event.key === "Select") {
+  if (event.code === "Select") {
     console.log("Select key pressed");
     function selectKeyPressed() {
       const selectKey = ["41", "Select", "", "", "select"];
@@ -881,7 +825,7 @@ window.addEventListener("keydown", function (event) {
     selectKeyPressed();
   }
 
-  if (event.key === "Execute") {
+  if (event.code === "Execute") {
     console.log("Execute key pressed");
     function executeKeyPressed() {
       const executeKey = ["43", "Execute", "", "", "execute"];
@@ -895,7 +839,7 @@ window.addEventListener("keydown", function (event) {
     executeKeyPressed();
   }
 
-  if (event.key === "Minus") {
+  if (event.code === "Minus") {
     console.log("Minus key is pressed");
     function minussignKeyPressed() {
       const minussignKey = ["63", "-", "Minus", "", "-"];
@@ -909,7 +853,7 @@ window.addEventListener("keydown", function (event) {
     minussignKeyPressed();
   }
 
-  if (event.key === "Numpad0") {
+  if (event.code === "Numpad0") {
     console.log("Insert key is pressed");
     function insertKeyPressed() {
       const insertKey = ["45", "Insert", "Numpad0", "x", "insert"];
@@ -923,7 +867,7 @@ window.addEventListener("keydown", function (event) {
     insertKeyPressed();
   }
 
-  if (event.key === "Help") {
+  if (event.code === "Help") {
     console.log("Help key is pressed");
     function helpKeyPressed() {
       const helpKey = ["47", "Help", "", "⍰", "help"];
@@ -937,63 +881,7 @@ window.addEventListener("keydown", function (event) {
     helpKeyPressed();
   }
 
-  if (event.key === "Digit2") {
-    console.log("Squared key pressed");
-    function squaredKeyPressed() {
-      const squaredKey = ["50", "²", "Digit2", "²", "sqaure"];
-      let x = squaredKey;
-      document.getElementById("keyCodeJSText").innerHTML = x[0];
-      document.getElementById("keyNameText").innerHTML = x[1];
-      document.getElementById("keyCodeText").innerHTML = x[2];
-      document.getElementById("keyUnicodeText").innerHTML = x[3];
-      document.getElementById("keyDescriptionText").innerHTML = x[4];
-    }
-    squaredKeyPressed();
-  }
-
-  if (event.key === "Digit2") {
-    console.log("Trademark key pressed");
-    function tmKeyPressed() {
-      const tmKey = ["50", "™", "Digit2", "™", "trademark"];
-      let x = tmKey;
-      document.getElementById("keyCodeJSText").innerHTML = x[0];
-      document.getElementById("keyNameText").innerHTML = x[1];
-      document.getElementById("keyCodeText").innerHTML = x[2];
-      document.getElementById("keyUnicodeText").innerHTML = x[3];
-      document.getElementById("keyDescriptionText").innerHTML = x[4];
-    }
-    tmKeyPressed();
-  }
-
-  if (event.key === "Digit3") {
-    console.log("Cubed key is pressed");
-    function cubedKeyPressed() {
-      const cubedKey = ["51", "³", "Digit3", "³", "cube"];
-      let x = cubedKey;
-      document.getElementById("keyCodeJSText").innerHTML = x[0];
-      document.getElementById("keyNameText").innerHTML = x[1];
-      document.getElementById("keyCodeText").innerHTML = x[2];
-      document.getElementById("keyUnicodeText").innerHTML = x[3];
-      document.getElementById("keyDescriptionText").innerHTML = x[4];
-    }
-    cubedKeyPressed();
-  }
-
-  if (event.key === "Digit3") {
-    console.log("Pound key is pressed");
-    function poundKeyPressed() {
-      const poundKey = ["51", "£", "Digit3", "£", "pound"];
-      let x = poundKey;
-      document.getElementById("keyCodeJSText").innerHTML = x[0];
-      document.getElementById("keyNameText").innerHTML = x[1];
-      document.getElementById("keyCodeText").innerHTML = x[2];
-      document.getElementById("keyUnicodeText").innerHTML = x[3];
-      document.getElementById("keyDescriptionText").innerHTML = x[4];
-    }
-    poundKeyPressed();
-  }
-
-  if (event.key === "Period") {
+  if (event.code === "Period") {
     console.log("Double Dot key is pressed");
     function doubledotKeyPressed() {
       const doubledotKey = ["58", ":", "Period", "", ":"];
@@ -1007,7 +895,7 @@ window.addEventListener("keydown", function (event) {
     doubledotKeyPressed();
   }
 
-  if (event.key === "KeyA") {
+  if (event.code === "KeyA") {
     console.log("A key pressed");
     function aKeyPressed() {
       const aKey = ["65", "a", "KeyA", "", "a"];
@@ -1021,7 +909,7 @@ window.addEventListener("keydown", function (event) {
     aKeyPressed();
   }
 
-  if (event.key === "KeyB") {
+  if (event.code === "KeyB") {
     console.log("B key pressed");
     function bKeyPressed() {
       const bKey = ["66", "b", "KeyB", "", "b"];
@@ -1035,7 +923,7 @@ window.addEventListener("keydown", function (event) {
     bKeyPressed();
   }
 
-  if (event.key === "KeyC") {
+  if (event.code === "KeyC") {
     console.log("C key pressed");
     function cKeyPressed() {
       const cKey = ["67", "c", "KeyC", "", "c"];
@@ -1049,7 +937,7 @@ window.addEventListener("keydown", function (event) {
     cKeyPressed();
   }
 
-  if (event.key === "KeyD") {
+  if (event.code === "KeyD") {
     console.log("D key pressed");
     function dKeyPressed() {
       const dKey = ["68", "d", "KeyD", "", "d"];
@@ -1063,7 +951,7 @@ window.addEventListener("keydown", function (event) {
     dKeyPressed();
   }
 
-  if (event.key === "KeyE") {
+  if (event.code === "KeyE") {
     console.log("E key pressed");
     function eKeyPressed() {
       const eKey = ["69", "e", "KeyE", "", "e"];
@@ -1077,7 +965,7 @@ window.addEventListener("keydown", function (event) {
     eKeyPressed();
   }
 
-  if (event.key === "KeyF") {
+  if (event.code === "KeyF") {
     console.log("F key pressed");
     function fKeyPressed() {
       const fKey = ["70", "f", "KeyF", "", "f"];
@@ -1091,7 +979,7 @@ window.addEventListener("keydown", function (event) {
     fKeyPressed();
   }
 
-  if (event.key === "KeyG") {
+  if (event.code === "KeyG") {
     console.log("G key is pressed");
     function gKeyPressed() {
       const gKey = ["71", "g", "KeyG", "", "g"];
@@ -1105,7 +993,7 @@ window.addEventListener("keydown", function (event) {
     gKeyPressed();
   }
 
-  if (event.key === "KeyH") {
+  if (event.code === "KeyH") {
     console.log("H key is pressed");
     function hKeyPressed() {
       const hKey = ["72", "h", "KeyH", "", "h"];
@@ -1119,7 +1007,7 @@ window.addEventListener("keydown", function (event) {
     hKeyPressed();
   }
 
-  if (event.key === "KeyI") {
+  if (event.code === "KeyI") {
     console.log("I key is pressed");
     function iKeyPressed() {
       const iKey = ["73", "i", "KeyI", "", "i"];
@@ -1133,7 +1021,7 @@ window.addEventListener("keydown", function (event) {
     iKeyPressed();
   }
 
-  if (event.key === "KeyJ") {
+  if (event.code === "KeyJ") {
     console.log("J key is pressed");
     function jKeyPressed() {
       const jKey = ["74", "j", "KeyJ", "", "j"];
@@ -1147,7 +1035,7 @@ window.addEventListener("keydown", function (event) {
     jKeyPressed();
   }
 
-  if (event.key === "KeyK") {
+  if (event.code === "KeyK") {
     console.log("K key is pressed");
     function kKeyPressed() {
       const kKey = ["75", "k", "KeyK", "", "k"];
@@ -1161,7 +1049,7 @@ window.addEventListener("keydown", function (event) {
     kKeyPressed();
   }
 
-  if (event.key === "KeyL") {
+  if (event.code === "KeyL") {
     console.log("L key is pressed");
     function lKeyPressed() {
       const lKey = ["76", "l", "KeyL", "", "l"];
@@ -1175,7 +1063,7 @@ window.addEventListener("keydown", function (event) {
     lKeyPressed();
   }
 
-  if (event.key === "KeyM") {
+  if (event.code === "KeyM") {
     console.log("M key is pressed");
     function mKeyPressed() {
       const mKey = ["77", "m", "KeyM", "", "m"];
@@ -1189,7 +1077,7 @@ window.addEventListener("keydown", function (event) {
     mKeyPressed();
   }
 
-  if (event.key === "KeyN") {
+  if (event.code === "KeyN") {
     console.log("N key is pressed");
     function nKeyPressed() {
       const nKey = ["78", "n", "KeyN", "", "n"];
@@ -1203,7 +1091,7 @@ window.addEventListener("keydown", function (event) {
     nKeyPressed();
   }
 
-  if (event.key === "KeyO") {
+  if (event.code === "KeyO") {
     console.log("O key is pressed");
     function oKeyPressed() {
       const oKey = ["79", "0", "KeyO", "", "o"];
@@ -1217,7 +1105,7 @@ window.addEventListener("keydown", function (event) {
     oKeyPressed();
   }
 
-  if (event.key === "KeyP") {
+  if (event.code === "KeyP") {
     console.log("P key is pressed");
     function pKeyPressed() {
       const pKey = ["80", "p", "KeyP", "", "p"];
@@ -1231,7 +1119,7 @@ window.addEventListener("keydown", function (event) {
     pKeyPressed();
   }
 
-  if (event.key === "KeyQ") {
+  if (event.code === "KeyQ") {
     console.log("Q key is pressed");
     function qKeyPressed() {
       const qKey = ["81", "q", "KeyQ", "", "q"];
@@ -1245,7 +1133,7 @@ window.addEventListener("keydown", function (event) {
     qKeyPressed();
   }
 
-  if (event.key === "KeyR") {
+  if (event.code === "KeyR") {
     console.log("R key is pressed");
     function rKeyPressed() {
       const rKey = ["82", "r", "KeyR", "", "r"];
@@ -1259,7 +1147,7 @@ window.addEventListener("keydown", function (event) {
     rKeyPressed();
   }
 
-  if (event.key === "KeyS") {
+  if (event.code === "KeyS") {
     console.log("S key is pressed");
     function sKeyPressed() {
       const sKey = ["83", "s", "KeyS", "", "s"];
@@ -1273,7 +1161,7 @@ window.addEventListener("keydown", function (event) {
     sKeyPressed();
   }
 
-  if (event.key === "KeyT") {
+  if (event.code === "KeyT") {
     console.log("T key is pressed");
     function tKeyPressed() {
       const tKey = ["84", "t", "KeyT", "", "t"];
@@ -1287,7 +1175,7 @@ window.addEventListener("keydown", function (event) {
     tKeyPressed();
   }
 
-  if (event.key === "KeyU") {
+  if (event.code === "KeyU") {
     console.log("U key is pressed");
     function uKeyPressed() {
       const uKey = ["85", "u", "KeyU", "", "u"];
@@ -1301,7 +1189,7 @@ window.addEventListener("keydown", function (event) {
     uKeyPressed();
   }
 
-  if (event.key === "KeyV") {
+  if (event.code === "KeyV") {
     console.log("V key is pressed");
     function vKeyPressed() {
       const vKey = ["86", "v", "KeyV", "", "v"];
@@ -1315,7 +1203,7 @@ window.addEventListener("keydown", function (event) {
     vKeyPressed();
   }
 
-  if (event.key === "KeyW") {
+  if (event.code === "KeyW") {
     console.log("W key is pressed");
     function wKeyPressed() {
       const wKey = ["87", "w", "KeyW", "", "w"];
@@ -1329,7 +1217,7 @@ window.addEventListener("keydown", function (event) {
     wKeyPressed();
   }
 
-  if (event.key === "KeyX") {
+  if (event.code === "KeyX") {
     console.log("X key is pressed");
     function xKeyPressed() {
       const xKey = ["88", "x", "KeyX", "", "x"];
@@ -1343,7 +1231,7 @@ window.addEventListener("keydown", function (event) {
     xKeyPressed();
   }
 
-  if (event.key === "KeyY") {
+  if (event.code === "KeyY") {
     console.log("Y key is pressed");
     function yKeyPressed() {
       const yKey = ["89", "y", "KeyY", "", "y"];
@@ -1357,7 +1245,7 @@ window.addEventListener("keydown", function (event) {
     yKeyPressed();
   }
 
-  if (event.key === "KeyZ") {
+  if (event.code === "KeyZ") {
     console.log("Z key is pressed");
     function zKeyPressed() {
       const zKey = ["90", "z", "KeyZ", "", "z"];
@@ -1371,7 +1259,7 @@ window.addEventListener("keydown", function (event) {
     zKeyPressed();
   }
 
-  if (event.key === "MetaLeft") {
+  if (event.code === "MetaLeft") {
     console.log("Meta Left key is pressed");
     function metaleftKeyPressed() {
       const metaleftKey = [
@@ -1391,7 +1279,7 @@ window.addEventListener("keydown", function (event) {
     metaleftKeyPressed();
   }
 
-  if (event.key === "MetaRight") {
+  if (event.code === "MetaRight") {
     console.log("Meta Right key is pressed");
     function metarightKeyPressed() {
       const metarightKey = ["92", "Meta", "MetaRight", "⌘ ⊞", "Right Windows"];
@@ -1405,7 +1293,7 @@ window.addEventListener("keydown", function (event) {
     metarightKeyPressed();
   }
 
-  if (event.key === "ContextMenu") {
+  if (event.code === "ContextMenu") {
     console.log("Context Menu is pressed");
     function contextKeyPressed() {
       const contextKey = [
@@ -1425,7 +1313,7 @@ window.addEventListener("keydown", function (event) {
     contextKeyPressed();
   }
 
-  if (event.key === "Standby") {
+  if (event.code === "Standby") {
     console.log("Standby key is pressed");
     function sleepKeyPressed() {
       const sleepKey = ["95", "Standby", "", "☾", "sleep"];
@@ -1439,7 +1327,7 @@ window.addEventListener("keydown", function (event) {
     sleepKeyPressed();
   }
 
-  if (event.key === "Numpad0") {
+  if (event.code === "Numpad0") {
     console.log("Numpad 0 key is pressed");
     function numpad0KeyPressed() {
       const numpad0Key = ["96", "0", "Numpad0", "⓪", "Number Pad 0"];
@@ -1453,7 +1341,7 @@ window.addEventListener("keydown", function (event) {
     numpad0KeyPressed();
   }
 
-  if (event.key === "Numpad1") {
+  if (event.code === "Numpad1") {
     console.log("Numpad 1 key is pressed");
     function numpad1KeyPressed() {
       const numpad1Key = ["97", "1", "Numpad1", "①", "Number Pad 1"];
@@ -1467,7 +1355,21 @@ window.addEventListener("keydown", function (event) {
     numpad1KeyPressed();
   }
 
-  if (event.key === "Numpad2") {
+  if (event.code === "Numpad1" && event.shiftKey) {
+    console.log("End key pressed");
+    function endKeyPressed() {
+      const endKey = ["35", "End", "Numpad1", "", "end"];
+      let x = endKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    endKeyPressed();
+  }
+
+  if (event.code === "Numpad2") {
     console.log("Numpad 2 key is pressed");
     function numpad2KeyPressed() {
       const numpad2Key = ["98", "2", "Numpad2", "②", "Number Pad 2"];
@@ -1495,7 +1397,21 @@ window.addEventListener("keydown", function (event) {
     numpad3KeyPressed;
   }
 
-  if (event.key === "Numpad4") {
+  if (event.code === "Numpad3" && event.shiftKey) {
+    console.log("Page Down key pressed");
+    function pageDownKeyPressed() {
+      const pageDownKey = ["34", "PageDown", "Numpad3", "⇟", "page down"];
+      let x = pageDownKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    pageDownKeyPressed();
+  }
+
+  if (event.code === "Numpad4") {
     console.log("Numpad 4 key is pressed");
     function numpad4KeyPressed() {
       const numpad4Key = ["100", "4", "Numpad4", "④", "Number Pad 4"];
@@ -1509,7 +1425,7 @@ window.addEventListener("keydown", function (event) {
     numpad4KeyPressed();
   }
 
-  if (event.key === "Numpad5") {
+  if (event.code === "Numpad5") {
     console.log("Numpad 5 key is pressed");
     function numpad5KeyPressed() {
       const numpad5Key = ["101", "5", "Numpad5", "⑤", "Number Pad 5"];
@@ -1523,7 +1439,7 @@ window.addEventListener("keydown", function (event) {
     numpad5KeyPressed();
   }
 
-  if (event.key === "Numpad6") {
+  if (event.code === "Numpad6") {
     console.log("Numpad 6 key is pressed");
     function numpad6KeyPressed() {
       const numpad6Key = ["102", "6", "Numpad6", "⑥", "Number Pad 6"];
@@ -1537,7 +1453,7 @@ window.addEventListener("keydown", function (event) {
     numpad6KeyPressed();
   }
 
-  if (event.key === "Numpad7") {
+  if (event.code === "Numpad7") {
     console.log("Numpad 7 key is pressed");
     function numpad7KeyPressed() {
       const numpad7Key = ["103", "7", "Numpad7", "⑦", "Number Pad 7"];
@@ -1551,7 +1467,21 @@ window.addEventListener("keydown", function (event) {
     numpad7KeyPressed();
   }
 
-  if (event.key === "Numpad8") {
+  if (event.code === "Numpad7" && event.shiftKey) {
+    console.log("Home key pressed");
+    function homeKeyPressed() {
+      const homeKey = ["36", "Home", "Numpad7", "⌂", "home"];
+      let x = homeKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    homeKeyPressed();
+  }
+
+  if (event.code === "Numpad8") {
     console.log("Numpad 8 key is pressed");
     function numpad8KeyPressed() {
       const numpad8Key = ["104", "8", "Numpad8", "⑧", "Number Pad 8"];
@@ -1565,7 +1495,7 @@ window.addEventListener("keydown", function (event) {
     numpad8KeyPressed();
   }
 
-  if (event.key === "Numpad9") {
+  if (event.code === "Numpad9") {
     console.log("Numpad 9 key is pressed");
     function numpad9KeyPressed() {
       const numpad9Key = ["105", "9", "Numpad9", "⑨", "Number Pad 9"];
@@ -1579,7 +1509,21 @@ window.addEventListener("keydown", function (event) {
     numpad9KeyPressed();
   }
 
-  if (event.key === "NumpadAdd") {
+  if (event.code === "Numpad9" && event.shiftKey) {
+    console.log("Page Up key pressed");
+    function pageUpKeyPressed() {
+      const pageUpKey = ["33", "PageUp", "Numpad9", "⇞", "page up"];
+      let x = pageUpKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    pageUpKeyPressed();
+  }
+
+  if (event.code === "NumpadAdd") {
     console.log("Numpad add key is pressed");
     function numpadAddKeyPressed() {
       const numpadAddKey = ["107", "+", "NumpadAdd", "", "add"];
@@ -1593,7 +1537,7 @@ window.addEventListener("keydown", function (event) {
     numpadAddKeyPressed();
   }
 
-  if (event.key === "NumpadSubtract") {
+  if (event.code === "NumpadSubtract") {
     console.log("Numpad subtract key is pressed");
     function numpadSubtractKeyPressed() {
       const numpadSubtractKey = ["109", "-", "NumpadSubtract", "", "subtract"];
@@ -1607,7 +1551,7 @@ window.addEventListener("keydown", function (event) {
     numpadSubtractKeyPressed();
   }
 
-  if (event.key === "NumpadDecimal") {
+  if (event.code === "NumpadDecimal") {
     console.log("Numpad decimal key is pressed");
     function numpadDecimalKeyPressed() {
       const numpadDecimalKey = [
@@ -1627,7 +1571,7 @@ window.addEventListener("keydown", function (event) {
     numpadDecimalKeyPressed();
   }
 
-  if (event.key === "ScrollLock") {
+  if (event.code === "ScrollLock") {
     console.log("sScroll lock is pressed");
     function scrolllockKeyPressed() {
       const scrolllockKey = [
@@ -1647,7 +1591,7 @@ window.addEventListener("keydown", function (event) {
     scrolllockKeyPressed();
   }
 
-  if (event.key === "AudioVolumeDown") {
+  if (event.code === "AudioVolumeDown") {
     console.log("Audio volume down key is pressed");
     function volumedownKeyPressed() {
       const volumedownKey = [
@@ -1667,7 +1611,7 @@ window.addEventListener("keydown", function (event) {
     volumedownKeyPressed();
   }
 
-  if (event.key === "AudioVolumeUp") {
+  if (event.code === "AudioVolumeUp") {
     console.log("Audio volume up key is pressed");
     function volumeupKeyPressed() {
       const volumeupKey = [
@@ -1687,7 +1631,7 @@ window.addEventListener("keydown", function (event) {
     volumeupKeyPressed();
   }
 
-  if (event.key === "MediaTrackNext") {
+  if (event.code === "MediaTrackNext") {
     console.log("Media track next key is pressed");
     function nextKeyPressed() {
       const nextKey = ["176", "MediaTrackNext", "MediaTrackNext", "", "next"];
@@ -1701,7 +1645,7 @@ window.addEventListener("keydown", function (event) {
     nextKeyPressed();
   }
 
-  if (event.key === "MediaTrackPrevious") {
+  if (event.code === "MediaTrackPrevious") {
     console.log("Media track previous key is pressed");
     function previousKeyPressed() {
       const previousKey = [
@@ -1721,7 +1665,7 @@ window.addEventListener("keydown", function (event) {
     previousKeyPressed();
   }
 
-  if (event.key === "MediaStop") {
+  if (event.code === "MediaStop") {
     console.log("Media Stop key is pressed");
     function stopKeyPressed() {
       const stopKey = ["178", "MediaStop", "", "", "stop"];
@@ -1735,7 +1679,7 @@ window.addEventListener("keydown", function (event) {
     stopKeyPressed();
   }
 
-  if (event.key === "MediaPlayPause") {
+  if (event.code === "MediaPlayPause") {
     console.log("Media Pause key is pressed");
     function pauseKeyPressed() {
       const pauseKey = ["179", "MediaPlayPause", "", "", "play/pause"];
@@ -1749,7 +1693,7 @@ window.addEventListener("keydown", function (event) {
     pauseKeyPressed();
   }
 
-  if (event.key === "VolumeMute") {
+  if (event.code === "VolumeMute") {
     console.log("Volume Mute key is pressed");
     function muteKeyPressed() {
       const muteKey = [
@@ -1769,7 +1713,7 @@ window.addEventListener("keydown", function (event) {
     muteKeyPressed();
   }
 
-  if (event.key === "NumpadDecimal") {
+  if (event.code === "NumpadDecimal") {
     console.log("Numpad decimal key is pressed");
     function numpadDecimalKeyPressed() {
       const numpadDecimalKey = [
@@ -1789,7 +1733,7 @@ window.addEventListener("keydown", function (event) {
     numpadDecimalKeyPressed();
   }
 
-  if (event.key === "Commma") {
+  if (event.code === "Comma") {
     console.log("Comma key is pressed");
     function commaKeyPressed() {
       const commaKey = ["188", ",", "Comma", "", "comma"];
@@ -1803,7 +1747,7 @@ window.addEventListener("keydown", function (event) {
     commaKeyPressed();
   }
 
-  if (event.key === "Less than") {
+  if (event.code === "Comma" && event.shiftKey) {
     console.log("Less than key is pressed");
     function lessthanKeyPressed() {
       const lessthanKey = ["188", "<", "Less than", "", "comma"];
@@ -1817,7 +1761,7 @@ window.addEventListener("keydown", function (event) {
     lessthanKeyPressed();
   }
 
-  if (event.key === "Minus") {
+  if (event.code === "Minus") {
     console.log("Underscore key is pressed");
     function underscoreKeyPressed() {
       const underscoreKey = ["189", "_", "Minus", "_", "underscore"];
@@ -1831,7 +1775,7 @@ window.addEventListener("keydown", function (event) {
     underscoreKeyPressed();
   }
 
-  if (event.key === "Period") {
+  if (event.code === "Period") {
     console.log("Period key is pressed");
     function periodKeyPressed() {
       const periodKey = ["190", ".", "Period", "", "period"];
@@ -1845,7 +1789,7 @@ window.addEventListener("keydown", function (event) {
     periodKeyPressed();
   }
 
-  if (event.key === "Period") {
+  if (event.code === "Period" && event.shiftKey) {
     console.log("greater than key is pressed");
     function greaterthanKeyPressed() {
       const greaterthanKey = ["190", ">", "Period", ">", "greater than"];
@@ -1859,7 +1803,7 @@ window.addEventListener("keydown", function (event) {
     greaterthanKeyPressed();
   }
 
-  if (event.key === "Slash") {
+  if (event.code === "Slash") {
     console.log("Forward slash key is pressed");
     function forwardslashKeyPressed() {
       const forwardslashKey = ["191", "/", "Slash", "", "forward slash / ç"];
@@ -1873,7 +1817,7 @@ window.addEventListener("keydown", function (event) {
     forwardslashKeyPressed();
   }
 
-  if (event.key === "Slash") {
+  if (event.code === "Slash" && event.shiftKey) {
     console.log("Question key pressed");
     function questionmarkKeyPressed() {
       const questionmarkKey = ["191", "?", "Slash", "?", "question mark"];
@@ -1887,27 +1831,7 @@ window.addEventListener("keydown", function (event) {
     questionmarkKeyPressed();
   }
 
-  if (event.key === "NumpadComma") {
-    console.log("Numpad Comma key pressed");
-    function numpadcommaKeyPressed() {
-      const numpadcommaKey = [
-        "194",
-        ".",
-        "NumpadComma",
-        "",
-        "numpad period (chrome)",
-      ];
-      let x = numpadcommaKey;
-      document.getElementById("keyCodeJSText").innerHTML = x[0];
-      document.getElementById("keyNameText").innerHTML = x[1];
-      document.getElementById("keyCodeText").innerHTML = x[2];
-      document.getElementById("keyUnicodeText").innerHTML = x[3];
-      document.getElementById("keyDescriptionText").innerHTML = x[4];
-    }
-    numpadcommaKeyPressed();
-  }
-
-  if (event.key === "BracketLeft") {
+  if (event.code === "BracketLeft") {
     console.log("Open Bracket key pressed");
     function openbracketKeyPressed() {
       const openbracketKey = ["219", "[", "BracketLeft", "", "open bracket"];
@@ -1921,7 +1845,7 @@ window.addEventListener("keydown", function (event) {
     openbracketKeyPressed();
   }
 
-  if (event.key === "BracketLeft") {
+  if (event.code === "BracketLeft" && event.shiftKey) {
     console.log("Braacket Left key pressed");
     function bracesleftKeyPressed() {
       const bracesleftKey = ["219", "{", "BracketLeft", "{", "braces left"];
@@ -1935,27 +1859,7 @@ window.addEventListener("keydown", function (event) {
     bracesleftKeyPressed();
   }
 
-  if (event.key === "BracketLeft") {
-    console.log("Double Quote key pressed");
-    function doublequoteKeyPressed() {
-      const doublequoteKey = [
-        "219",
-        "“",
-        "BracketLeft",
-        "“",
-        "inverted double quotation",
-      ];
-      let x = doublequoteKey;
-      document.getElementById("keyCodeJSText").innerHTML = x[0];
-      document.getElementById("keyNameText").innerHTML = x[1];
-      document.getElementById("keyCodeText").innerHTML = x[2];
-      document.getElementById("keyUnicodeText").innerHTML = x[3];
-      document.getElementById("keyDescriptionText").innerHTML = x[4];
-    }
-    doublequoteKeyPressed();
-  }
-
-  if (event.key === "Backslash") {
+  if (event.code === "Backslash") {
     console.log("Backslash key pressed");
     function backslashKeyPressed() {
       const backslashKey = ["220", "", "Backslash", "", "back slash"];
@@ -1969,7 +1873,7 @@ window.addEventListener("keydown", function (event) {
     backslashKeyPressed();
   }
 
-  if (event.key === "BracketRight") {
+  if (event.code === "BracketRight") {
     console.log("Close Bracket key pressed");
     function closebracketKeyPressed() {
       const closebracketKey = [
@@ -1989,7 +1893,7 @@ window.addEventListener("keydown", function (event) {
     closebracketKeyPressed();
   }
 
-  if (event.key === "BracketRight") {
+  if (event.code === "BracketRight" && event.shiftKey) {
     console.log("Braces Right key pressed");
     function bracesrightKeyPressed() {
       const bracesrightKey = ["221", "}", "BracketRight", "}", "braces right"];
@@ -2003,10 +1907,10 @@ window.addEventListener("keydown", function (event) {
     bracesrightKeyPressed();
   }
 
-  if (event.key === "Quote") {
+  if (event.code === "Quote") {
     console.log("Single Quote key pressed");
     function singlequoteKeyPressed() {
-      const singlequoteKey = ["222", "'", "Quote", "", "single quote / ø / ä"];
+      const singlequoteKey = ["222", "'", "Quote", "", "single quote"];
       let x = singlequoteKey;
       document.getElementById("keyCodeJSText").innerHTML = x[0];
       document.getElementById("keyNameText").innerHTML = x[1];
@@ -2015,6 +1919,62 @@ window.addEventListener("keydown", function (event) {
       document.getElementById("keyDescriptionText").innerHTML = x[4];
     }
     singlequoteKeyPressed();
+  }
+
+  if (event.code === "Quote" && event.shiftKey) {
+    console.log("Double quote key pressed");
+    function singlequoteKeyPressed() {
+      const singlequoteKey = ["222", "", "Quote", "", "double quote"];
+      let x = singlequoteKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    singlequoteKeyPressed();
+  }
+
+  if (event.code === "Backquote") {
+    console.log("Backquote key pressed");
+    function backquoteKeyPressed() {
+      const backquoteKey = ["192", "`", "Backquote", "", "`"];
+      let x = backquoteKey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    backquoteKeyPressed();
+  }
+
+  if (event.code === "Semicolon") {
+    console.log("Semicolon key pressed");
+    function semicolonKeyPressed() {
+      const semicolonkey = ["186", ";", "Semicolon", "", "semi-colon"];
+      let x = semicolonkey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    semicolonKeyPressed();
+  }
+
+  if (event.code === "Semicolon" && event.shiftKey) {
+    console.log("Period key pressed");
+    function periodKeyPressed() {
+      const periodkey = ["58", ":", "Period", "", ":"];
+      let x = periodkey;
+      document.getElementById("keyCodeJSText").innerHTML = x[0];
+      document.getElementById("keyNameText").innerHTML = x[1];
+      document.getElementById("keyCodeText").innerHTML = x[2];
+      document.getElementById("keyUnicodeText").innerHTML = x[3];
+      document.getElementById("keyDescriptionText").innerHTML = x[4];
+    }
+    periodKeyPressed();
   }
 });
 
